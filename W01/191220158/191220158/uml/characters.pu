@@ -1,0 +1,65 @@
+@startuml
+
+class Being
+
+class Creature {
+
+    int hp
+    int attack
+    int defense
+    String name
+
+    speakTo()
+    listen()
+    laugh()
+    attack()
+    receiveattack()
+    isDead()
+}
+
+class Boss{
+
+    show_weakness()
+    grab_attack()
+    I_see_dead_people()
+}
+class Human{
+    boolean grabed
+    boolean giantmod
+
+    rolleyes()
+     if_grabable()
+     angry()
+}
+
+class Monster{
+    String weakness
+}
+
+class animal{
+    xijuren()
+}
+class hero{
+    boolean visiable
+
+   Giant_Mode()
+    Small_Mode()
+    hide_on_bush()
+    Apparence()
+    final_attack()
+
+}
+Creature --|> Being
+
+
+Human --|> Creature
+
+Monster --|> Creature
+
+animal --|> Creature
+
+Boss --|> Monster
+
+hero --|> Human
+
+@enduml
