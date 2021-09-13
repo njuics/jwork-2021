@@ -1,5 +1,3 @@
-# W01示例
-
 选取视频 https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=19 中 14:40-16:33 的桥段
 
 类型设计（建模）如下：
