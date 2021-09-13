@@ -1,0 +1,68 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3
+' 2:50 ~ 3:46
+
+@startuml
+actor       老头   as oldman 
+actor       蛇精    as snake  #Black 
+actor       蝎子精    as scorpion   #Purple 
+entity      蛛网  as spiderweb #White
+
+spiderweb -[#Green]> spiderweb : 开 
+
+snake -[#Grey]> oldman : 告诉
+note right
+    老人家，
+    你和我无冤无仇，
+    这次请你来...
+end note
+
+oldman -[#Grey]> snake : 告诉
+note left: 哼!有这么请的么？
+
+snake -[#Grey]> oldman : 告诉
+note right
+老人家，冤仇易解不宜结，
+我们攀个亲家交个朋友，
+你可以安度晚年
+end note
+
+scorpion -[#Grey]> oldman : 告诉
+note right
+    这是我们的一片诚意啊！
+    哈哈哈哈哈哈哈...
+end note
+
+snake -[#Grey]> oldman : 告诉
+note right: 来来来，我先敬你一杯
+
+oldman -[#Grey]> snake : 告诉
+note left: 去你的
+
+oldman -[#Red]> snake : 造成伤害
+note left: 掌掴
+
+scorpion -[#Blue]> scorpion : 发怒
+note right: 哇呀呀呀呀呀...
+
+scorpion -[#Blue]> scorpion : 前进
+
+scorpion -[#Grey]> oldman : 告诉
+
+note right: 你是不想活了你
+
+scorpion -[#Red]> oldman : 造成伤害
+note left: 掐
+
+snake -[#Grey]> scorpion : 告诉
+note right
+    大王，别急，
+    留着这老头才能摸清葫芦的奥秘，
+    知己知彼才能消灾灭祸
+end note
+
+scorpion -[#Blue]> scorpion : 转眼珠
+
+spiderweb -[#Green]> spiderweb : 关 
+
+@enduml
+

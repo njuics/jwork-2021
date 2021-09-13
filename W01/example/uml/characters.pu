@@ -1,0 +1,39 @@
+@startuml
+
+class Being
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+    String[] memory
+
+    speakTo()
+    listen()
+    attack()
+    move()
+}
+
+class SpiderWeb{
+    status
+    open()
+    close()
+}
+
+class Monster{
+    int magic
+    rolleyes()
+    bePissed()
+}
+
+Creature --|> Being
+
+
+Human --|> Creature
+
+Monster --|> Creature
+
+SpiderWeb --|> Being
+
+@enduml
