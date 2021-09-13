@@ -1,4 +1,4 @@
-选取视频 https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=13中5:16 ~ 6:25 的桥段
+选取视频 https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=13中 5:16 ~ 6:25 的桥段
 
 取名为《打怪升级救爷爷》
 
