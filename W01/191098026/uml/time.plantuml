@@ -1,0 +1,34 @@
+@startuml time
+
+actor oldman
+actor pangolin
+entity gourd
+entity leaf
+entity seed
+entity mountain
+
+pangolin -> oldman : speak
+note left : this is the seed which can surrender devils and demons.
+oldman -> pangolin : speak
+note right : oh...
+pangolin -> oldman : speak
+note left : if we get the seed, it can help us leave the cave.
+oldman -> pangolin : speak
+note right : all right.
+pangolin -> oldman : speak
+note left : dangerous!
+gourd -> gourd : spitfire
+gourd -> oldman : damage
+gourd -> pangolin : damage
+oldman -> oldman : run
+pangolin -> pangolin : run
+leaf -> leaf : appear
+pangolin -> oldman : speak
+note left : grandfather!
+oldman -> leaf : pickup
+gourd -> leaf : get
+gourd -> seed : become
+oldman -> seed : get
+mountain -> mountain : collaspe
+
+@enduml

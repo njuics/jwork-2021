@@ -1,0 +1,69 @@
+@startuml class
+
+class Creature
+{
+    + int health
+    + int attack
+    + int defense
+    + int speed
+    + String name
+    + String[] memory
+    + int memoryOffset
+    + Creature()
+    + speak()
+    + listen()
+    + receiveDamage()
+    + run()
+    + getTreasure()
+    + isDead()
+}
+
+class  Human
+{
+    + Human()
+}
+
+class Pangolin
+{
+    + Pangolin()
+}
+
+class Leaf
+{
+    + Leaf()
+    + appear()
+}
+
+Human --|> Creature
+Pangolin --|> Creature
+Leaf --|> Creature
+
+class Mountain
+{
+    + Mountain()
+    + collapse()
+}
+
+class Treasure
+{
+    + String name
+}
+
+class Treasure_Gourd
+{
+    + boolean active
+    + Treasure_Gourd()
+    + spitFire()
+    + getLeaf()
+    + becomeSeed()
+}
+
+class Treasure_Gourd_Seed
+{
+    + Treasure_Gourd_Seed()
+}
+
+Treasure_Gourd --|> Treasure
+Treasure_Gourd_Seed --|> Treasure
+
+@enduml
