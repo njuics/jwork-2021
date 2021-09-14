@@ -1,7 +1,7 @@
 @startuml time
 
-actor oldman
 actor pangolin
+actor oldman
 entity gourd
 entity leaf
 entity seed
@@ -17,6 +17,15 @@ oldman -> pangolin : speak
 note right : all right.
 pangolin -> oldman : speak
 note left : dangerous!
+gourd -> gourd : spitfire
+gourd -> oldman : damage
+gourd -> pangolin : damage
+oldman -> pangolin : speak
+note right : the fire is so heavy that we can't get the seed.
+pangolin -> oldman : speak
+note left : the seed needs leaf to become inactive.
+oldman -> pangolin : speak
+note right :there are lots of stones and no leaf in the cave.
 gourd -> gourd : spitfire
 gourd -> oldman : damage
 gourd -> pangolin : damage

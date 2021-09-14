@@ -41,7 +41,7 @@ public class Creature
     public void run()
     {
         speed += 2;
-        System.out.println(name + "run away.");
+        System.out.println(name + " run away.");
     }
 
     public void getTreasure(Treasure treasure)

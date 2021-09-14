@@ -26,8 +26,8 @@ grandfather tell pangolin: 'there are lots of stones and no leaf in the cave.'
 Gourd spits fire
 grandfather got 20 points attack.
 pangolin got 15 points attack.
-grandfatherrun away.
-pangolinrun away.
+grandfather run away.
+pangolin run away.
 leaf appears
 pangolin tell grandfather: 'grandfather!'
 Gourd becomes a seed
