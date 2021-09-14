@@ -2,12 +2,12 @@
 
 类型设计（建模）如下：
 
-![](https://github.com/Direction-cy/jwork-2021/blob/main/W01/191098026/uml/class.png)
+![](https://raw.githubusercontent.com/Direction-cy/jwork-2021/blob/main/W01/191098026/uml/class.png)
 
 
 桥段场景如下：
 
-![](https://github.com/Direction-cy/jwork-2021/blob/main/W01/191098026/uml/time.png)
+![](https://raw.githubusercontent.com/Direction-cy/jwork-2021/blob/main/W01/191098026/uml/time.png)
 
 得到运行结果：
 
