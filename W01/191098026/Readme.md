@@ -2,12 +2,12 @@
 
 类型设计（建模）如下：
 
-![](https://raw.githubusercontent.com/Direction-cy/jwork-2021/blob/main/W01/191098026/uml/class.png)
+![](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Direction-cy/jwork-2021/main/W01/191098026/uml/class.plantuml)
 
 
 桥段场景如下：
 
-![](https://raw.githubusercontent.com/Direction-cy/jwork-2021/blob/main/W01/191098026/uml/time.png)
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Direction-cy/jwork-2021/main/W01/191098026/uml/time.plantuml)
 
 得到运行结果：
 
