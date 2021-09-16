@@ -1,0 +1,72 @@
+@startuml characters
+
+class Being {
+    String name
+}
+
+class Creature {
+
+    int health
+    int attack
+    int defence
+
+    isDead()
+    getHurt()
+    attack()
+    cleanObstruction()
+    speakTo()
+    speak()
+    move()
+
+}
+
+class Obstruction {
+    
+    String operation
+    getDone()
+
+}
+
+class Human {
+    
+    stumble()
+    cry()
+
+}
+
+class Monster {
+
+    _catch()
+    _throw()
+    angry()
+
+}
+
+class Pangolin {}
+
+class Soldier {
+
+    yawn()
+    arrest()
+
+}
+
+class Trap {}
+
+class Stone {}
+
+class SpiderWeb {}
+
+Creature --|> Being
+Obstruction --|> Being
+
+Monster --|> Creature
+Human --|> Creature
+Pangolin --|> Creature
+Soldier --|> Creature
+
+Trap --|> Obstruction
+SpiderWeb --|> Obstruction
+Stone --|> Obstruction
+
+@enduml

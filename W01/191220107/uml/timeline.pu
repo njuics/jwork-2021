@@ -1,0 +1,62 @@
+@startuml timeline
+
+actor   老头    as oldman
+actor   穿山甲  as pangolin
+actor   蝎子精  as monster
+actor   膏药士兵    as soldier1
+actor   另一士兵    as soldier2
+actor   虫子士兵    as soldier3
+
+entity  陷阱    as trap
+entity  蜘蛛网  as spiderweb
+entity  石头    as stone
+
+pangolin -[#Green]> trap : 破解
+pangolin -[#Green]> spiderweb : 诱发
+
+soldier2 -[#Blue]> soldier2 : 打哈欠
+soldier1 -[#Gray]> soldier2 : 说
+note left: 大王叫我们严加防守，可不能马虎啊
+soldier1 -[#Gray]> soldier2 : 说
+note left: 上回，那葫芦蛮小子闯进大门，大王怪罪下来，一巴掌差点没把我打死，算我命大
+soldier1 -[#Blue]> soldier1 : 说
+note left: 不好，有情况
+soldier2 -[#Gray]> soldier1 : 说
+note left: 啊，原来是只小老鼠
+soldier2 -[#Gray]> soldier1 : 说
+note left: 老兄，你被葫芦娃吓得，胆子比这耗子还小啊，哈哈哈哈
+
+pangolin -[#Green]> stone : 推开
+pangolin -[#Blue]> pangolin : 说
+note left: 快走
+pangolin -[#Blue]> pangolin : 移动
+oldman -[#Blue]> oldman : 移动
+oldman -[#Blue]> oldman : 摔倒
+soldier1 -[#Blue]> soldier1 : 移动
+soldier2 -[#Blue]> soldier2 : 移动
+soldier1 -[#Blue]> soldier1 : 说
+note left: 站住
+soldier2 -[#Blue]> soldier2 : 说
+note left: 站住
+pangolin -[#Blue]> pangolin : 说
+note left: 你们别想抓住我
+soldier1 -[#Blue]> soldier1 : 移动
+soldier2 -[#Blue]> soldier2 : 移动
+pangolin -[#Blue]> pangolin : 移动
+
+monster -[#Red]> pangolin : 抓住
+pangolin -[#Blue]> pangolin : 说
+note left: 啊啊啊啊
+monster -[#Gray]> pangolin : 说
+note left: 嘿嘿嘿嘿
+pangolin -[#Blue]> pangolin : 说
+note left: 你们这群坏蛋
+monster -[#Red]> pangolin : 扔出
+soldier1 -[#Red]> pangolin : 扣押
+soldier2 -[#Red]> pangolin : 扣押
+soldier3 -[#Gray]> monster : 说
+note left: 报告大王，大事不好，老头与瞎眼葫芦逃跑啦
+monster -[#Blue]> monster : 生气
+monster -[#Red]> pangolin : 攻击
+pangolin -[#Blue]> pangolin : 死亡
+oldman -[#Blue]> oldman : 哭

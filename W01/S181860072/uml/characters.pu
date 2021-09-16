@@ -1,0 +1,41 @@
+@startuml characters
+class Being
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+    String[] memory
+    Being hand
+
+    speakTo()
+    listen()
+    attack()
+    moveAct()
+    facialExpression()
+    passThing()
+    pickThing()
+    receiveThing()
+}
+
+class Elixir{
+    int defense
+    twinkling()
+}
+
+class Monster{
+    int magic
+    rolleyes()
+    bePissed()
+}
+
+Creature --|> Being
+
+
+Human --|> Creature
+
+Monster --|> Creature
+
+Elixir --|> Being
+@enduml
