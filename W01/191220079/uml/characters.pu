@@ -1,0 +1,52 @@
+@startuml
+
+class Being
+
+class Creature{
+
+	int health;
+	int attack;
+	int defence;
+	String name;
+	String[] memory;
+	
+	speak()
+	listen()
+	emotion()
+	attack()
+}
+
+class Weapon{
+	
+	int power
+	int health
+	
+	broken()
+}
+
+class Monster{
+	
+	Weapon weapon
+	
+	getweapon()
+}
+
+class Xiezi{
+	
+	createWeapon()
+	escape()
+}
+
+class Sanwa{
+	
+	breakWeapon()
+	move()
+}
+
+Creature --|> Being
+Weapon --|> Being
+Sanwa --|> Creature
+Monster --|> Creature
+Xiezi --|> Monster
+
+@enduml
