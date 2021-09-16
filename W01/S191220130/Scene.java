@@ -1,3 +1,5 @@
+package W01.S191220130;
+
 public class Scene {
     Tool ruyi = new RuYi();
     Tool spear = new Spear();

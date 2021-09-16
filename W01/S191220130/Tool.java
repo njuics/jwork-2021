@@ -1,5 +1,6 @@
+package W01.S191220130;
 
-public class Tool extends Object{
+public class Tool extends Object {
     int durability;
     int damage;
 
