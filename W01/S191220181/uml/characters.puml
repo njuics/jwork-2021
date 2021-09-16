@@ -1,0 +1,39 @@
+@startuml
+
+class Being {
+    String name
+}
+
+class Creature {
+    String[] memory
+    int memoryOffset
+    speakTo()
+    listen()
+    move()
+    think()
+}
+
+
+class Monster{
+    hit()
+    runafter()
+    shoe()
+    pick()
+    laugh()
+}
+
+class Sanwa{
+    verb()
+    trap()
+    turn()
+    protect()
+}
+
+Creature --|> Being
+
+Sanwa --|> Creature
+
+Monster --|> Creature
+
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml characters
+
+class Being{
+    String name
+}
+
+class Creature{
+    int health
+    int attack 
+    int defense 
+    String[] memory 
+
+    speakTo()
+    listen()
+    attack()
+    move()
+}
+
+class Monster{
+    int magic 
+}
+
+class Human{
+    int energy
+}
+
+class Prob{
+    int addition
+}
+
+
+Creature --|> Being
+
+Human --|> Creature
+
+Monster --|> Creature
+
+Prob --|> Being
+
+Weapeon --|> Prob
+
+Stone --|> Prob
+
+@enduml

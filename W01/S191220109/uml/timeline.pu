@@ -1,0 +1,141 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=2
+' 5:38 ~ 7:10
+
+@startuml
+actor       蛇精    as snake    #Black 
+actor       蝎子精    as scorpion   #Purple 
+actor       葫芦藤   as calabash_bro    #Green
+actor      蜜蜂轰炸机1  as bee_bomber1  #Pink
+actor      蜜蜂轰炸机2  as bee_bomber2  #Pink
+actor      蜜蜂轰炸机3  as bee_bomber3  #Pink
+actor      蜜蜂轰炸机4  as bee_bomber4  #Pink
+actor      长机  as bee_bomber5  #Pink
+
+snake -[#Blue]> snake : 惊讶
+snake -[#Grey]> scorpion : 告诉
+note left
+    啊？这些该死的葫芦！是从什么地方冒出来的！
+end note
+
+scorpion -[#Blue]> scorpion : 惊讶
+scorpion -[#Grey]> snake : 告诉
+note left
+    咦？这这这这这这这......这怎么回事！
+end note
+
+snake -[#Blue]> snake : 生气
+snake -[#Grey]> scorpion : 告诉
+note left
+    好啊！嗯！原来是这个家伙在跟我们捣乱！
+end note
+
+scorpion -[#Grey]> snake : 告诉
+note left
+    哈！夫人，这葫芦枝叶又嫩，果实不坚，趁现在前去斩除，为时不晚！
+end note
+
+snake -[#Grey]> scorpion : 告诉
+note left
+    嗯，你可不能小看了这神葫芦，我们吃了它多少苦头！如今穿山甲和老头儿，把葫芦籽弄了出去，一旦瓜熟蒂落，我们就全完了！
+end note
+
+scorpion -[#Grey]> snake : 告诉
+note left
+    哎，夫人！三日之内，我必挖其根，断其藤，这群嫩葫芦送予夫人斟酒！啊哈哈哈哈哈哈哈哈......
+end note
+
+scorpion -[#Grey]> bee_bomber5 : 告诉
+note left
+    准备起飞，目标：摧毁葫芦藤。
+end note
+
+bee_bomber5 -[#Grey]> scorpion : 告诉
+note right
+    收到，准备起飞。
+end note
+
+bee_bomber1 -[#Green]> bee_bomber1 : 起飞
+calabash_bro -[#Green]> bee_bomber1 : 监测
+bee_bomber2 -[#Green]> bee_bomber2 : 起飞
+calabash_bro -[#Green]> bee_bomber2 : 监测
+bee_bomber3 -[#Green]> bee_bomber3 : 起飞
+calabash_bro -[#Green]> bee_bomber3 : 监测
+bee_bomber4 -[#Green]> bee_bomber4 : 起飞
+calabash_bro -[#Green]> bee_bomber4 : 监测
+bee_bomber5 -[#Green]> bee_bomber5 : 起飞
+calabash_bro -[#Green]> bee_bomber5 : 监测
+
+calabash_bro -[#Green]> calabash_bro : 报告
+note left
+    发现五架蜜蜂轰炸机起飞！所有单位注意，这不是演习！
+end note
+
+bee_bomber1 -[#Red]> calabash_bro : 投弹
+note right
+    伤害低于对方防御，未造成伤害
+end note
+bee_bomber2 -[#Red]> calabash_bro : 投弹
+note right
+    伤害低于对方防御，未造成伤害
+end note
+bee_bomber3 -[#Red]> calabash_bro : 投弹
+note right
+    伤害低于对方防御，未造成伤害
+end note
+bee_bomber4 -[#Red]> calabash_bro : 投弹
+note right
+    伤害低于对方防御，未造成伤害
+end note
+bee_bomber5 -[#Red]> calabash_bro : 投弹
+note right
+    伤害低于对方防御，未造成伤害
+end note
+
+calabash_bro -[#Green]> calabash_bro : 报告
+note left
+    导弹就绪，锁定目标
+end note
+
+calabash_bro -[#Green]> calabash_bro : 命令
+note left
+    Fire!
+end note
+
+calabash_bro -[#Red]> bee_bomber1 : 导弹命中！造成20点有效伤害！敌机被击落！
+bee_bomber1 -[#Green]> bee_bomber5 : 报告
+note right
+    我被击中！我被击中！正在下坠！正在下坠！
+end note
+calabash_bro -[#Red]> bee_bomber2 : 导弹命中！造成20点有效伤害！敌机被击落！
+bee_bomber2 -[#Green]> bee_bomber5 : 报告
+note right
+    我被击中！我被击中！正在下坠！正在下坠！
+end note
+calabash_bro -[#Red]> bee_bomber3 : 导弹命中！造成20点有效伤害！敌机被击落！
+bee_bomber3 -[#Green]> bee_bomber5 : 报告
+note right
+    我被击中！我被击中！正在下坠！正在下坠！
+end note
+calabash_bro -[#Red]> bee_bomber4 : 导弹命中！造成20点有效伤害！敌机被击落！
+bee_bomber4 -[#Green]> bee_bomber5 : 报告
+note right
+    我被击中！我被击中！正在下坠！正在下坠！
+end note
+
+calabash_bro -[#Green]> calabash_bro : 报告
+note left
+    四架敌机被击落，一架逃窜。
+end note
+
+
+bee_bomber5 -[#Blue]> bee_bomber5 : 惊讶
+bee_bomber5 -[#Grey]> scorpion : 告诉
+note right
+    任务失败，正在返回。
+end note
+calabash_bro -[#Blue]> calabash_bro : 开心
+note left
+    哈哈哈哈哈哈哈哈哈哈哈哈哈哈！！！
+end note
+
+@enduml

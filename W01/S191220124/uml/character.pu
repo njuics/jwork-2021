@@ -1,0 +1,47 @@
+@startuml
+
+class Being{
+    String name
+}
+
+class Creature {
+    int health
+    int attack
+    int defense
+
+    attack()
+    laugh()
+    bePissed()
+}
+
+class Monster{
+    Weapon weapon
+    strengthen()
+    equipWeapon()
+    unequipWeapon()
+    missedAttack()
+    beScared()
+    escape()
+}
+
+class Cucumis{
+    strengthen()
+    beScorned()
+}
+
+class Weapon{
+    ind durability
+    beDamaged()
+}
+class Sword
+Creature --|> Being
+
+Cucumis --|>Creature
+
+Monster --|> Creature
+
+Weapon --|>Being
+
+Sword --|> Weapon
+
+@enduml

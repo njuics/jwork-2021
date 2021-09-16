@@ -1,0 +1,69 @@
+@startuml
+class Creature{
+    ~ String names
+    ~ int health
+    ~ int attack
+    ~ int defense
+
+    ~ Creature()
+    + toString()
+    + speak()
+    +  move()
+    + attack()
+    + receiveAttack()
+    + isDead()
+    + {static} main()
+
+}
+
+class Bigbro{
+    - {static} singleton
+
+    - Bigbro();
+    + {static} getInstance()
+    + dodge()
+    + receiveAttack()
+    + becomeMega()
+    + becomeNormal()
+    + {static} main()
+}
+
+class Monster{
+    ~ Monster()
+    + transform()
+    + {static} main()
+}
+
+class Snake{
+    - {static} singleton
+
+    - Snake()
+    + {static} getInstance()
+    + magic()
+    + {static} main()
+    
+}
+
+class Scorpion{
+    - {static} singleton
+
+    - Scorpion()
+    + {static} getInstance()
+    + getArmed()
+    + lostArm()
+    + {static} main()
+}
+
+class Subtitle{
+    ~ Array<String> contentlist
+    ~ Subtitle()
+    + Iterator()
+    + {static} main()
+}
+
+Creature <|-- Monster
+Monster <|-- Scorpion
+Monster <|-- Snake
+Creature <|-- Bigbro
+
+@enduml

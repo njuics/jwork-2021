@@ -1,0 +1,63 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=10
+' 5:05 ~ 6:10
+
+@startuml timeline
+title	六娃隐身闹妖洞
+actor	六娃    as LiuWa
+actor	蝎子精  as Scorpion #Purple
+actor	小喽啰们    as Minion   #Blue
+actor	蛇精    as Snake    #Black
+entity	蛛网    as Cobweb #White
+entity	岩石    as Rock #Yellow
+
+LiuWa -[#Green]>LiuWa : 隐身
+LiuWa -[#Blue]> LiuWa : 大笑
+note left:  哈哈哈哈...
+LiuWa -[#Red]> Scorpion : 踢击
+note left: 造成伤害
+Scorpion -[#Red]> LiuWa : 抓取
+note right: 落空
+Scorpion -[#Red]> LiuWa : 抓取
+note right: 落空
+
+Scorpion -[#Blue]> Scorpion : 发怒
+Scorpion -[#Blue]> Minion : 告诉
+note left: 快去抓住他！
+
+LiuWa -[#Blue]> LiuWa : 大笑
+note left:  嘿嘿嘿嘿...
+Minion -[#Green]> LiuWa: 寻找
+note right: 失败
+Minion -[#Green]> Minion: 告诉
+note right: 光听见声音，人呢？
+
+LiuWa -[#Green]> Minion: 视觉欺骗
+note left: 成功
+LiuWa -[#Blue]> Minion : 嘲讽
+note left: 哈哈我在这呢！
+Minion -[#Red]> LiuWa: 射击
+note right: 落空
+
+Snake -[#Green]> LiuWa: 寻找
+note right: 成功
+Snake -[#Blue]> Minion: 告诉
+note right: 示意蜘蛛小喽啰使用蛛网陷阱
+
+Minion -[#Green]> Cobweb: 使用
+note right: 降下蛛网
+Cobweb -[#Red]> LiuWa: 捕获
+note right: 成功
+Minion -[#Blue]> LiuWa: 告诉
+note right: 哈哈总算抓到你了，\n我看你再跑！
+LiuWa -[#Green]> Cobweb: 逃脱术
+note left: 成功
+
+LiuWa -[#Green]> Rock: 使用
+note left: 推落岩石
+Rock -[#Red]> Scorpion:砸
+note right: 造成伤害
+Scorpion -[#Blue]> Scorpion : 发怒
+Scorpion -[#Blue]> Minion : 告诉
+note left: 快抓住他！
+
+@enduml

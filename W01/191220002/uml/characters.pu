@@ -1,0 +1,98 @@
+@startuml characters
+
+class Being{
+    String name
+    setName()
+    getName()
+}
+
+class Creature {
+    Buff[] buff
+    int health
+    int attackDamage
+    double dodgeChance
+    double hitChance
+    speakTo()
+    useItem()
+    attack()
+    hurt()
+    move()
+    addBuff()
+    updateBuff()
+    searchBuffByName()
+    clearBuffByName()
+}
+
+class LiuWa{
+    fadeOut()
+    laugh()
+    kick()
+    visuallyInduce()
+    escape()
+    taunt()
+}
+
+class Monster{
+    search()
+}
+
+class Scorpion{
+    beAngry()
+}
+
+class Snake{
+    search()
+}
+
+class Entity{
+    int health
+    beUsed()
+}
+
+class Cobweb{
+    beUsed()
+}
+
+class Rock{
+    beUsed()
+}
+
+class Buff{
+    double duration
+    boolean isNull
+    affect()
+    disappear()
+}
+
+class BeInvisible{
+    affect()
+    disappear()
+}
+
+class BeInduced{
+    affect()
+    disappear()
+}
+
+class BeCaught{
+     affect()
+     disappear()
+}
+
+Creature --|> Being
+
+LiuWa --|> Creature
+
+Monster --|> Creature
+Scorpion --|> Monster
+Snake --|> Monster
+
+Entity --|> Being
+Rock --|> Entity
+Cobweb --|> Entity
+
+Buff --|> Being
+BeInvisible --|> Buff
+BeInduced --|> Buff
+BeCaught --|> Buff
+@enduml

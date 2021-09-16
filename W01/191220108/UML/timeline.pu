@@ -1,0 +1,179 @@
+@startuml
+actor       大娃  as firstred #Red
+actor       二娃  as secondorange #Orange
+actor       三娃  as thirdyellow  #Yellow
+actor       四娃  as fourthgreen  #Green
+
+actor       蜜蜂精 as beemen #White
+actor       蓝蛤蟆精 as bluetoad #DarkBlue
+actor       小喽啰 as redtoadandlizard #Blue
+actor       蜈蚣精 as centipede #Pink
+
+actor       爷爷   as oldman 
+
+actor       蛇精    as snake  #Black 
+actor       蝎子精    as scorpion   #Purple 
+
+entity      石门  as stonedoor #Grey
+
+firstred -[#Red]> beemen : 防御
+note left
+    发动防御技能：
+    大力出奇迹之借物挡灾…
+end note
+
+beemen -[#Red]> firstred : 攻击
+note right
+     发动技能：屁股毒箭
+     对方开启防御，技能无效
+end note
+
+fourthgreen -[#Red]> firstred : 支援
+
+fourthgreen -[#Red]> beemen : 攻击
+note left
+        发动技能：三昧真火
+        输出150点伤害
+        蜜蜂精扑街
+end note
+
+bluetoad -[#Red]> thirdyellow : 攻击
+note right
+       普通攻击
+       输出30点伤害
+end note
+
+thirdyellow -[#Red]> bluetoad : 攻击
+note left
+        普通攻击
+        输出60点伤害
+end note
+
+bluetoad -[#Red]> thirdyellow : 攻击
+note right
+       普通攻击
+       输出30点伤害
+end note
+
+thirdyellow -[#Red]> bluetoad : 攻击
+note left
+        普通攻击
+        输出60点伤害
+end note
+
+bluetoad -[#Red]> thirdyellow : 攻击
+note right
+       普通攻击
+       输出30点伤害
+end note
+
+thirdyellow -[#Red]> bluetoad : 攻击
+note left
+        发动技能：铁臂斩
+        损失武器，战力值下降
+end note
+
+thirdyellow -[#Red]> bluetoad : 攻击
+note left
+        普通攻击
+        输出60点伤害
+        蓝蛤蟆精扑街
+end note
+
+firstred -[#Red]> redtoadandlizard : 打野
+note left
+        一波打野
+       战力提升，血量增加
+end note
+
+scorpion -[#Red]> scorpion : 见势不妙
+note right : 快跑
+
+stonedoor -[#Green]> stonedoor : 开
+
+scorpion -[#Red]> oldman : 挟持
+note right
+       跑出洞穴
+end note
+
+snake -[#Red]> snake : 逃跑
+
+centipede -[#Red]> firstred : 攻击
+note right
+     普通攻击
+     输出50点伤害
+end note
+
+firstred -[#Red]> centipede : 攻击
+note right
+       普通攻击
+       输出80点伤害
+end note
+
+centipede -[#Red]> firstred : 攻击
+note right
+     普通攻击
+     输出50点伤害
+end note
+
+firstred -[#Red]> centipede : 攻击
+note right
+       发动技能：摧毁武器
+       对方战力值下降
+end note
+
+firstred -[#Red]> centipede : 攻击
+note right
+       普通攻击
+       输出80点伤害
+end note
+
+centipede -[#Red]> firstred : 攻击
+note right
+     普通攻击
+     输出30点伤害
+end note
+
+firstred -[#Red]> centipede : 攻击
+note right
+       发动技能：摧毁武器
+       对方战力值下降
+end note
+
+centipede -[#Red]> centipede : 弃甲而逃
+
+firstred -[#Red]> centipede : 大喊
+note left : 哪里跑
+
+centipede -[#Red]> firstred : 攻击
+note right
+     发动技能：变身巨人
+     自身战力值上升
+     自身生命值上升
+end note
+
+centipede -[#Red]> firstred : 攻击
+note right
+     发动技能：巨人之力
+     输出100点伤害
+end note
+
+firstred -[#Red]> centipede : 攻击
+note right
+       发动技能：大力撕扯
+       输出160点伤害
+end note
+
+firstred -[#Red]> centipede : 攻击
+note right
+       发动技能：大力撕扯
+       输出160点伤害
+       蜈蚣精扑街
+end note
+
+secondorange -[#Red]> oldman : 寻找
+note left 
+       发动技能：千里眼
+      搜寻到爷爷踪迹
+end note
+@enduml

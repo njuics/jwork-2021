@@ -1,0 +1,54 @@
+@startuml
+actor 蛇精 as snake #Purple
+actor 蝎子精 as scorpion #Grey
+actor 四娃 as boy1 #Green
+actor 六娃 as boy2 #Blue
+entity 门 as door
+entity 墙 as wall
+entity 蝙蝠 as bat
+entity 酒 as wine
+entity 火 as fire
+
+scorpion -[#Yellow]> scorpion : 站起来
+scorpion -[#Grey]> snake : 告诉
+note right
+    快掌灯生火，共进家宴
+end note
+
+scorpion -[#Yellow]> scorpion : 坐下了
+
+boy1 -[#Yellow]> boy1 : 站起来
+boy1 -[#Grey]> scorpion : 告诉
+note right
+慢，用不着费那力气，看我的
+end note
+
+boy1 -[#Yellow]> boy1 : 使用技能
+note left: 消耗50魔法
+
+fire -[#Orange]> fire : 生成了
+
+fire -[#Orange]> wall : 烧着了
+
+bat -[#Yellow]> bat : 飞走了
+
+fire -[#Orange]> wine : 升温了
+
+boy1 -[#Red]> wine : 喝掉了
+
+boy1 -[#Yellow]> boy1 : 坐下了
+
+snake -[#Grey]> boy1 : 告诉
+note right: 二位兄弟大驾光临为洞府增辉啊
+
+scorpion -[#Grey]> boy1: 告诉
+note right: 你们真是神通广大，佩服佩服
+
+boy2 -[#Grey]> scorpion : 告诉
+note right: 妖怪快还我哥哥
+
+scorpion -[#Grey]> boy1: 告诉
+note right: 误会,二位的兄长正在睡觉，请看
+
+door -[#Green]> door : 开了
+@enduml

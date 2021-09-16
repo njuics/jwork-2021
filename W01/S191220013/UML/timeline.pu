@@ -1,0 +1,63 @@
+@startuml
+actor       葫芦娃   as huluwa
+entity      叉子  as fork #White
+actor       蛇精    as snake  #Black 
+actor       蝎子精    as scorpion   #Purple 
+
+huluwa -[#Grey]> snake : 告诉
+note left
+    妖精，快还我爷爷，
+    快还我爷爷！
+end note
+
+snake -[#Blue]> snake : 转眼珠
+
+snake -[#Grey]> huluwa : 告诉
+note right
+    可以，可以，
+    你这娃娃倒是一片孝心。
+    你爷爷就在这，
+    你亲妈也在这，
+    快给我磕头。
+end note
+
+huluwa -[#Grey]> snake : 告诉
+note left
+    呸，真不要脸。
+end note
+
+scorpion -[#Blue]> scorpion : 笑
+
+huluwa -[#Grey]> snake : 告诉
+note left
+    今天，要是不把我爷爷放了，
+    我就把你这妖洞砸得粉碎。
+end note
+
+scorpion -[#Blue]> scorpion : 笑
+
+scorpion -[#Grey]>  fork:  扔
+note right
+    扔向葫芦娃
+end note
+
+huluwa -[#Red]>  fork:  造成伤害
+note left
+    攻击变形
+end note
+
+huluwa -[#Grey]>  fork:  扔
+note left
+    扔向蝎子精
+end note
+
+huluwa -[#Blue]> huluwa : 笑
+
+snake -[#Red]>  huluwa:  造成伤害
+note right
+    冰冻魔法攻击
+end note
+
+huluwa -[#Blue]> huluwa : 被冰冻
+
+@enduml

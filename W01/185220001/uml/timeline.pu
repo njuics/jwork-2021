@@ -1,0 +1,47 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3
+' 2:50 ~ 3:46
+
+@startuml
+actor       老头    as oldman
+actor       水娃    as shuiwa  #Blue
+actor       火娃    as huowa   #Red
+entity      地面    as groud #Brown
+entity      水壶    as kettle #Silver
+entity      水桶    as bucket #BurlyWood
+
+shuiwa -[#BlueViolet]> groud : 浇水灌溉
+shuiwa -[#BlueViolet]> bucket : 灌满水
+bucket -[#Blue]> bucket : 水满
+shuiwa -[#BlueViolet]> groud : 浇水灌溉
+
+huowa -[#Gray]> shuiwa : 告诉
+note right
+    够了够了
+    弟弟，别再喷水了
+    爷爷，看我的
+end note
+
+oldman -[#Gray]> shuiwa : 告诉
+note left
+    哦，好
+end note
+
+huowa -[#IndianRed]> oldman : 造成伤害
+note right
+    喷出火苗
+end note
+
+oldman -[#Grey]> huowa : 告诉
+note left
+    诶呦
+end note
+
+huowa -[#IndianRed]> kettle : 喷火烧水
+
+kettle -[#Green]> kettle : 水开
+
+shuiwa -[#Gray]> huowa : 告诉
+note left
+    好！好！
+end note
+@enduml

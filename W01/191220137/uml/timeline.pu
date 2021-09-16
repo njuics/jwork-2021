@@ -1,0 +1,64 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=6
+' 6:50 ~ 7:43
+
+@startuml
+actor       三娃   as theThird 
+actor       蛇精    as snake  #Black 
+actor       蝎子精    as scorpion   #Purple 
+entity      水晶  as crystal #White
+
+snake -[#Grey]> theThird : 告诉
+note right:啊？
+
+scorpion -[#Grey]> theThird : 告诉
+note right:哎呀！
+
+theThird -[#Grey]> snake : 告诉
+note left: 我来了！
+
+snake -[#Grey]> theThird : 告诉
+note right:嗯？
+
+scorpion -[#Grey]> theThird : 告诉
+note right:啊？
+
+theThird -[#Grey]> snake : 告诉
+note left: 嗨诶！！
+
+theThird -[#Red]> crystal : 造成伤害
+note left: 撞击
+
+crystal -[#Green]> crystal : 破碎
+
+scorpion -[#Blue]> scorpion : 哭
+note right: 我的宝贝！
+
+snake -[#Blue]> snake : 哭
+
+theThird -[#Blue]> theThird : 大笑
+
+snake -[#Red]> theThird : 造成伤害
+note right: 捡起水晶碎片并扔出去
+
+theThird -[#Grey]> snake : 告诉
+note left: 你们这些害人精，还不快投降！
+
+snake -[#Grey]> theThird : 告诉
+note right
+    哈哈哈哈哈哈哈！
+    你凭着一身钢筋铁骨就如此夸口，
+    你可知道老娘的厉害！
+end note
+
+theThird -[#Grey]> snake : 告诉
+note right
+    哈哈哈哈哈哈哈！
+    你有什么本事，嘿，
+    就拿出来吧！
+end note 
+
+snake -[#Grey]> theThird : 告诉
+note right: 好！
+
+@enduml
+

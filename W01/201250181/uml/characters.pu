@@ -1,0 +1,24 @@
+@startuml characters
+Creature <|-- Monster
+Creature <|-- CalabashBrother
+Creature : talk(String word,Creature listener)
+Creature : heard(String word)
+Creature : attackOtherCreature(Creature attacked)
+Creature : beAttacked(int amount)
+Creature : String name
+Creature : int health
+Creature : int attack
+Monster : Weapon wepon
+Weapon <|-- Sword
+Weapon <|-- Hammer
+Weapon <|-- Chain
+Weapon : String name
+Weapon : int endure
+Weapon : wear(int amount)
+Weapon : playSkill(Creature attacked)
+Sword : restore(int amount)
+Scene : init()
+Scene : play()
+Scene : HashMap<Monster> monsters;
+Scene : CalabashBrother ironKid;
+@enduml

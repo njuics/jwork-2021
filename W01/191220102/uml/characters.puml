@@ -1,0 +1,55 @@
+@startuml
+class Being{
+    String name
+    }
+
+class Creature{
+    int health
+    int attack
+    int defense
+    String[] memory
+
+    speakTo()
+    listenFrom()
+    attack()
+    receiveAttack()
+    isDead()
+    jump()
+    dance()
+    struggle()
+    trap()
+}
+
+class Sword{
+    appear()
+    big()
+    hard()
+    soft()
+}
+
+class Yaojing{
+    int magic
+    attack()
+}
+
+class Monster{
+    boolean hasHardSword
+    boolean hasSoftSword
+    int hasSwing
+    attack()
+    swingSword()
+    hardSword()
+    softSword()
+}
+
+class Huluwa{
+    gift()
+}
+
+Creature --|> Being
+Yaojing --|> Creature
+Monster --|> Yaojing
+Huluwa --|> Yaojing
+Sword --|> Being
+
+@enduml

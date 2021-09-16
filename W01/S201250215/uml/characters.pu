@@ -1,0 +1,74 @@
+@startuml
+
+class Being{
+
+    String name
+    int positionX
+    int positionY
+
+    getPositionX()
+    getPositionY()
+    getName()
+
+}
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+    int shock
+    int healthcost
+    String[] memory
+
+    speakTo()
+    listen()
+    attack()
+    move()
+    receiveAttack()
+    judgeLife()
+    move()
+    relativeDistance()
+    hasWeapon()
+    loseWeapon()
+
+}
+
+class Weapon{
+    String name
+    int attack
+    ArrayList<String> users
+
+    getName()
+    getAttack()
+    addUser()
+    deleteUser()
+    hasUser()
+
+}
+
+class Monster{
+    int magic
+
+    attack()
+    attackByWeapon()
+    increaseHealth()
+    hugHead()
+
+}
+
+class Calabashbrothers{
+    status
+    attackByWeapon()
+    CrowFliesbyPlane()
+    Expelliarmus()
+    cloaking
+}
+
+Creature --|> Being
+
+Calabashbrothers --|> Creature
+
+Monster --|> Creature
+
+@enduml

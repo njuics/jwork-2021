@@ -1,0 +1,41 @@
+@startuml
+class Object extends Being{
+    int temperature = 15;
+}
+class Monster extends Creature{
+
+}
+class Human extends Creature{
+    String color;
+}
+class Fire extends Object{
+    burn();
+}
+class Door extends Object{
+    boolean isOpen = false;
+    open();
+}
+class Creature extends Being{
+    boolean isSit;
+    String name;
+    int mana = 100;
+    String skill;
+    int anger = 0;
+
+    speakTo();
+    stand();
+    sit();
+    drink();
+    useSkill();
+}
+class BottleOfWine extends Object{
+    int volume = 100;
+
+}
+class Being {
+
+}
+class Bat extends Creature{
+    flyAway();
+}
+@enduml

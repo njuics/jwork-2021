@@ -1,0 +1,45 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=11
+' 3:50 ~ 4:50
+
+@startuml
+actor 蜈蚣精 as centipede  #Orange
+actor 蛤蟆精 as frog  #Yellow
+entity 门 as door  #Black
+entity 酒 as wine  #White
+actor 六娃 as sixthBro  #Blue
+
+centipede -> frog : 劝告
+note left
+    你留点神
+    好好把好这门
+end note
+
+frog -> centipede : 嘲讽
+note right
+    你算老几？多管闲事
+    这儿有我把门
+    谁也进不来！
+    你还是自己管好自己
+    别像上次那样
+    再掉进网里了
+end note
+
+centipede -> frog : 无力反驳
+
+sixthBro -> sixthBro : 心生一计
+
+sixthBro -> wine : 拿起酒壶，倾倒
+
+wine -> frog : 散发香气~
+
+frog -> frog : 没能抵住诱惑
+note right : 好香啊
+
+frog -> door : 打开门
+
+sixthBro -> sixthBro : 隐身
+note right : 趁机潜入
+
+door -> door : 关
+
+@enduml

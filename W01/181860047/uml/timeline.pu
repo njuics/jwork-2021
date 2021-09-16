@@ -1,0 +1,30 @@
+@startuml
+actor 蛇精 as m1
+actor 蝎子 as m2
+actor 火娃 as h1
+actor 水娃 as h2
+m1 -> h1:   说
+note left:我给你斟一杯冷泉清凉
+
+h1 -> h1:  喝了一杯冷泉清凉
+h1 -> h1:  只能喝一杯冷泉清凉，倒在椅子上
+h1 -> h1: 倒下去的时候喃喃自语：这酒好凉，我不行了
+m2 -> m2: 叹息
+note right:真是个毛孩子
+h2 -> h2: 大喊
+note right: 四哥四哥，哎
+h2 -> m1: 说
+note right: 不要小看人，快拿好酒来
+m2 -> h2: 提供了20坛 蝎子的坛坛酒
+h2 -> h2: 喝完20坛酒
+h2 -> h2: 大喊
+note right: 拿更多酒来
+
+m2 -> m2: 大哭
+note right: 我的酒啊
+m1 -> m1:自言自语
+note left:如意如意，随我心意，快快显灵
+m1 -> h2:通过魔法提供了“一大碗酒”
+h2 -> h2:喝完了一大碗酒
+h2 -> h2:只能喝这一大碗酒了，倒在了椅子上
+@enduml

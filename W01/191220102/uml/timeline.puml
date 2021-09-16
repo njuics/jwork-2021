@@ -1,0 +1,125 @@
+@startuml
+actor 铁娃 as iron #Yellow
+actor 蛇精 as snake #Black
+actor 蝎子精 as scorpion #purple
+entity 刚柔阴阳剑 as sword #grey
+
+iron -[#Yellow]> iron:Gift lunch:I'm invulnerable.
+sword -[#Grey]> sword:I appear.
+sword -[#Grey]> sword:I get bigger.
+sword -[#Grey]> sword:I am very hard.
+snake -[#Black]> snake:I use the hard sword,so my magic improves.
+snake -[#Black]> snake:I swing my sword 3 times,so my attack improves.
+
+iron -[#Yellow]> snake:告诉
+note left
+    哈哈哈哈哈哈哈
+end note
+
+snake -[#Black]> iron:告诉
+note right
+    啊？你难道不怕我这宝剑呐？
+end note
+
+iron -[#Yellow]> snake:告诉
+note left
+    你干脆把所有的兵器都拿出来吧，
+    我还可以陪你玩玩。
+end note
+
+snake -[#Black]> iron:告诉
+note right
+    哼！只要你顶得住我三剑，
+    我就缴械投降还你哥哥。
+end note
+
+iron -[#Yellow]> snake:告诉
+note left
+    好！说话算数。
+end note
+
+iron -[#Yellow]> iron:jump down
+
+iron -[#Yellow]> snake:告诉
+note left
+    诶，来吧。
+end note
+
+snake -[#Black]> iron:告诉
+note right
+    好！
+end note
+
+iron -[#Yellow]> snake:告诉
+note left
+    诶！慢着！谁要是赖皮，谁就是孬种。
+end note
+
+snake -[#Black]> iron:告诉
+note right
+    看剑！
+end note
+
+snake -[#Black]> iron:攻击（未造成伤害）
+note right
+    剑击
+end note
+
+iron -[#Yellow]> snake:告诉
+note left
+    1
+end note
+
+snake -[#Black]> snake:I swing my sword 3 times,so my attack improves.
+
+snake -[#Black]> iron:攻击（未造成伤害）
+note right
+    剑击
+end note
+
+iron -[#Yellow]> snake:告诉
+note left
+    2
+end note
+
+scorpion -[#Purple]> iron:惊讶
+note right
+    啊？
+end note
+
+iron -[#Yellow]> snake:嘲讽
+note left
+    哈哈，到底是个女人。我的头可不是面团捏的。
+    最后一下了，你可得把劲都使出来啊！
+end note
+
+snake -[#Black]> iron:告诉
+note right
+    哼！铁娃子，可别心急啊。
+    你还不知道这刚柔阴阳剑的厉害呢。好！你等着。
+end note
+
+snake -[#Black]> snake:dance
+sword -[#Grey]> sword:I am very soft.
+snake -[#Black]> snake:I use the soft sword.
+
+snake -[#Black]> iron:告诉
+note right
+    哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+end note
+
+iron -[#Yellow]> iron:struggle
+
+scorpion -[#Purple]> iron:告诉
+note right
+    呵呵哈哈哈哈哈哈哈哈哈哈哈
+end note
+
+sword -[#Grey]> iron:绑住
+
+snake -[#Black]> iron:告诉
+note right
+    哼。铁娃子，女人的软刀子滋味怎么样呀，嗯？
+    哈哈哈哈。
+end note
+@enduml

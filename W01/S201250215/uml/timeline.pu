@@ -1,0 +1,70 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=10
+' 7:47 ~ 9:00
+
+@startuml
+actor       六娃   as sixbaby
+actor       蝎子精    as scorpion   #Purple
+actor       蛇精    as snake  #Black
+actor       小怪  as slave #White
+
+sixbaby -[#Red]> scorpion : 造成伤害
+note left: 乌鸦坐飞机
+
+scorpion -[#Blue]> scorpion : 休克
+
+sixbaby -[#Green]> sixbaby : 隐身
+
+sixbaby -[#Red]> scorpion : 抢走武器
+note left: 除你武器
+
+slave -[#Red]> sixbaby : 造成伤害
+note left: 戳
+
+sixbaby -[#Grey]> slave : 告诉
+note right
+    吃我一招！
+end note
+
+sixbaby -[#Red]> slave : 造成伤害
+note left: 敲打
+
+slave -[#Brown]> slave : 阵亡
+
+scorpion -[#Blue]> scorpion : 回血
+
+scorpion -[#Grey]> sixbaby : 告诉
+note right: 哇呀呀呀隐身怎么打呀嘤嘤嘤
+
+sixbaby -[#Green]> sixbaby : 追逐
+
+sixbaby -[#Red]> slave : 造成伤害
+note left: 敲打
+
+sixbaby -[#Grey]> scorpion : 告诉
+note right
+    我一定好好教训你这个大混蛋！
+    我不是小学生！我不好惹！
+end note
+
+sixbaby -[#Red]> scorpion : 造成伤害
+note left: 敲打
+
+scorpion -[#Blue]> scorpion : 抱头
+note right: 啊啊啊
+
+scorpion -[#Blue]> scorpion : 进门
+
+sixbaby -[#Green]> sixbaby : 进门
+
+sixbaby -[#Red]> snake : 造成伤害
+note left: 环绕晕眩
+
+snake -[#Purple]> snake : 抱头
+note right: 啊啊啊
+
+scorpion -[#Red]> sixbaby : 造成伤害
+note right: 敲打
+
+sixbaby -[#Red]> scorpion : 造成伤害
+note right: 分身晕眩
+@enduml

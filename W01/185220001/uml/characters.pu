@@ -1,0 +1,58 @@
+@startuml
+
+class Being
+
+class Creature {
+
+    String name
+    int health
+    int attack
+    int defense
+
+    speakTo()
+    listen()
+    attack()
+    receiveAttack()
+    isDead()
+}
+
+class Huowa {
+    fire()
+}
+
+class Shuiwa {
+    water()
+}
+
+class Item {
+
+    String name
+
+    receiveWater()
+    receiveFire()
+}
+
+class Kettle {
+    @Override void receiveFire()
+}
+
+class Bucket {
+    boolean fill
+
+    @Override void reciveWater()
+    boolean isFull()    
+}
+
+Creature --|> Being
+
+Human --|> Creature
+
+Huowa --|> Creature
+
+Shuiwa --|> Creature
+
+Kettle --|> Item
+
+Bucket --|> Item
+
+@enduml

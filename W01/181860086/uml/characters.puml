@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Being {
+    shatter()
+    hole()
+
+    String name
+}
+
+class Creature {
+    fallOn()
+    dodge()
+    laugh()
+    angry()
+    attack()
+    see()
+    speak()
+    hurt()
+    run()
+    runAfter()
+    climbUp()
+    afraid()
+    hold()
+    throw()
+
+    Being body
+    Being arms
+    Being hands
+}
+
+class Monster {
+    changeHandPart()
+    regeneration()
+    toWind()
+
+    Being pliers
+    boolean isHands
+}
+
+class ThirdBaby {
+}
+
+Creature -[#green]> Being
+ThirdBaby -[#green]> Creature
+Monster -[#green]> Creature
+
+@enduml

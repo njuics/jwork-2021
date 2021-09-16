@@ -1,0 +1,51 @@
+@startuml timeline
+
+actor 三娃 as boy3 #Yellow
+actor 蛇精 as snake #Blue
+entity 铁棒 as stick #Green
+entity 鞋子 as shoe #Red
+entity 绳子 as rope #Black
+
+snake -> boy3:告诉
+note right
+    那你准备好，
+    我来了！
+end note
+
+snake -> stick:使用
+stick -[#Red]> boy3:攻击
+boy3 -> stick:闪避
+snake -> boy3:告诉
+note right
+    哈哈哈 铁娃子
+    你的软裆让我看出来了
+    就怕打你的屁股
+    你想跑 我叫你跑不了
+end note
+
+snake -> shoe:释放
+shoe -> boy3:穷追不舍 套在脚上
+shoe -[#Red]> boy3:缩小
+boy3 -> boy3:受到伤害
+snake -> shoe:告诉
+note right
+    哈哈哈哈哈
+end note
+snake -> stick:使用
+stick -[#Red]> boy3:攻击
+boy3 -[#Green]> boy3:受到伤害
+snake -> shoe:告诉
+note right
+    哈哈哈哈哈
+end note
+snake -> stick:使用
+stick -[#Red]> boy3:攻击
+boy3 -[#Green]> boy3:受到伤害
+boy3 -[#Blue]> boy3: 生命清零 倒下！
+snake -> shoe:告诉
+note right
+    哈哈哈哈哈
+end note
+snake -> rope: 使用
+rope -[#Red]> boy3: 捆绑
+@enduml

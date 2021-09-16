@@ -1,0 +1,58 @@
+@startuml timeline
+actor   六娃        as  waSixHuman
+actor   癞蛤蟆      as  toadMonster
+actor   蜈蚣精      as  centipedeMonster
+entity   三叉戟      as  tridentWeaopn
+entity   狼牙棒      as  maceWeapon
+entity   石头        as  smallStone
+
+waSixHuman -[#Green]> toadMonster : 告诉
+note left
+    哈哈哈你来抓我吧，
+    抓不着我了吧，
+    我在这呢，哈哈哈
+end note
+
+toadMonster -[#Green]> waSixHuman : 告诉
+note right
+    好哇，你往哪里跑！
+end note
+
+toadMonster -[#Grey]> tridentWeaopn : 拿起
+toadMonster -[#Red]> waSixHuman : 攻击
+
+centipedeMonster -[#Green]> waSixHuman : 告诉
+note right
+    看你往哪走
+end note
+
+centipedeMonster -[#Green]> centipedeMonster : 告诉
+note right
+    诶，在哪呢
+end note
+
+waSixHuman -[#Green]> centipedeMonster : 告诉
+note right
+    我在这呢
+end note
+
+waSixHuman -[#Grey]> smallStone : 拿起
+waSixHuman -[#Red]> centipedeMonster : 攻击
+
+centipedeMonster -[#Green]> waSixHuman : 告诉
+note right
+    我的妈呀，你饶了我吧
+end note
+
+waSixHuman -[#Grey]> maceWeapon : 拿起
+waSixHuman -[#Red]> centipedeMonster : 攻击
+
+waSixHuman -[#Green]> centipedeMonster : 告诉
+note left
+    你们这些妖精，无恶不作，
+    捉了我兄弟，害我爷爷，
+    我今天要好好教训
+    你们这群混蛋
+end note
+
+@enduml

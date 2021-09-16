@@ -1,0 +1,51 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=5
+' 2:16 ~ 3:26
+
+@startuml
+actor       老头   as oldman
+actor       黄色蛤蟆    as frog1  #yellow
+actor       蓝色蛤蟆   as frog2   #blue
+entity      三叉戟  as mvp #White
+
+
+
+frog1 -[#Grey]> frog2 : 告诉
+note right
+    站岗好烦，
+    我要睡觉
+end note
+
+frog2 -[#Grey]> frog1 : 告诉
+note left: 是啊是啊
+
+frog1 -[#Grey]> oldman : 传出声音
+note right
+ZZZZZ~~~~~~
+end note
+
+frog2 -[#Grey]> oldman : 传出声音
+note right
+ZZZZZ~~~~~~
+end note
+
+oldman -[#Red]> mvp : 不小心踩到
+note right: 三叉戟划伤了蓝色蛤蟆的屁股
+
+frog2-[#Grey]> frog1 : 告诉
+note left: 你打我干啥
+
+frog2 -[#Blue]> frog2 : 发怒
+frog1 -[#Red]> frog2 : 告诉
+note left:我没有
+
+
+frog2-[#Red]> frog1 : 造成伤害
+note left: 打
+
+frog1-[#Red]> frog2 : 造成伤害
+note right: 踢
+
+
+
+@enduml
+

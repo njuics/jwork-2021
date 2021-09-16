@@ -1,0 +1,62 @@
+@startuml timeline
+
+entity StoneGate as sg
+actor Gourd as g #Green
+actor CalaBro as c #Blue
+entity Stalactite as st #DarkBlue
+entity Vat as v #Brown
+actor Snake as sn #Yellow
+actor Scorpion as sc #Grey
+
+sn ->sn: 笑
+note left:哈哈哈哈哈哈哈
+g-[#Orange]>g:晃
+sc->sn:说
+note right
+夫人深谋远虑，
+七个葫芦终于都抓到手了，
+还要请夫人,
+趁早把它们炼成七心丹
+end note
+sn->sc:说
+note left
+我看小葫芦长的很嫩，
+趁它还没有成熟，
+可以把它培育成
+我们的葫芦娃
+end note
+sn-[#Orange]>sn:眼中放光
+==场景变换，来到机关处==
+sg-[#Green]>sg:开
+st-[#Green]>v:滴水
+sn->g:扔到钟乳上
+note right:嘿！
+st->g:滴水
+g-[#Orange]>g:晃
+g-[#Orange]>g:挣脱
+g-[#Blue]>sn:造成伤害
+note left:跳跃攻击
+g-[#Blue]>sc:造成伤害
+note left:Double Kill
+g-[#Orange]>g:葫芦炸开
+g-[#Green]>c:葫芦娃出生
+c-[#Gray]>c:隐身
+sn-[#Red]>sn:怒
+sn->sc:说
+note left:哎呀不好！葫芦娃跑了!!!
+sc-[#Red]>sc:怒
+sc->sn:说
+note right:快抓住他!!!
+c-[#Blue]>sn:造成伤害
+note left:攻击
+sn-[#Green]>sn:被击飞
+note left:啊！
+c-[#Blue]>sc:造成伤害
+note left:Double Kill
+sc-[#Green]>sc:被击退
+note left:撞到石头
+sc-[#Red]>sc:怒气++
+note left:哎呀！抓住他！！！
+c-[#Black]>c:现形
+note right:随着消失在视野中...
+@enduml

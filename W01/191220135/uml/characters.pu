@@ -1,0 +1,51 @@
+@startuml
+
+class Being {
+    String name
+}
+
+class Creature {
+    int hp
+    laugh()
+    speak()
+    speakTo()
+    isDead()
+}
+
+class Monster {
+    openDoor()
+}
+
+class CalabashBro {
+
+}
+
+class SixthBro {
+    boolean visible
+    hideSelf()
+    gotIdea()
+    enter()
+}
+
+class Door {
+    open()
+    close()
+}
+
+class Wine {
+    smell()
+}
+
+Creature --|> Being
+
+Monster --|> Creature
+
+CalabashBro --|> Creature
+
+SixthBro --|> CalabashBro
+
+Door --|> Being
+
+Wine --|> Being
+
+@enduml

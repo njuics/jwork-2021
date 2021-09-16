@@ -1,0 +1,99 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=7
+' 1:32 ~ 2.40
+
+@startuml
+actor       三娃   as threeboy 
+actor       蛇精    as snake  #Black 
+actor       蝎子精    as scorpion   #Purple 
+entity      地面  as ground #White
+
+snake -[#Blue]> snake : 大笑
+note right: Hahahahahaha
+
+scorpion -[#Blue]> scorpion : 大笑
+note right: Hahahahahaha
+
+threeboy -[#Blue]> threeboy : 被捆绑
+note left: 挣扎着鲤鱼打挺
+
+snake -[#Grey]> threeboy : 告诉
+note right
+三娃子，就算你天生一副铜头铁臂刀枪不入
+也斗不过我这把刚柔阴阳剑呐
+这会可尝到了你姑奶奶的厉害了吧！！！
+嗯？
+end note
+
+snake -[#Blue]> snake : 发怒
+note right: 挥拳ヽ(#`Д′)ﾉ
+
+scorpion -[#Grey]> threeboy : 告诉
+note right
+哼
+你这个龟孙子
+你还有多大能耐，快使出来吧 昂
+end note
+
+scorpion -[#Blue]> snake : 嘲讽
+note right: 踱步到三娃旁挥手手
+
+scorpion -[#Red]> threeboy : 造成伤害
+note left: 踢*3
+
+threeboy -[#Red]> scorpion : 造成伤害
+note left: 咬手指
+
+scorpion -[#Blue]> scorpion : 流血
+note right: AYO Wayyyyyyyya
+
+threeboy -[#Red]> scorpion : 造成伤害
+note left: 火箭头槌
+
+threeboy -[#Red]> scorpion : 嘲讽
+note left: 略略略
+
+snake -[#Grey]> threeboy : 告诉
+note right
+好小子你砸了我的魔镜还要撒野？
+我非把你焖在炼丹炉里！
+end note
+
+scorpion -[#Grey]> threeboy : 告诉
+note right
+熬成肉酱！！！！
+炼成七星丹！！！
+end note
+
+snake -[#Blue]> snake : 发怒
+note right: 挥拳ヽ(#`Д′)ﾉ
+scorpion -[#Blue]> scorpion : 发怒
+note right: 挥拳ヽ(#`Д′)ﾉ
+
+snake -[#Grey]> snake : 释放技能
+note right
+发动场地卡‘闪电鞭’
+看！
+end note
+
+snake -[#Red]> ground : 施加效果
+note left: 劈里啪啦雷声大作
+
+ground -[#Green]> ground : 裂开
+
+threeboy -[#Blue]> threeboy : 大喊
+note right
+兄弟们
+快来消灭妖精！！！！！！
+end note
+
+threeboy -[#Red]> ground : 施加效果
+note left: 三娃 掉进了地缝中
+
+scorpion -[#Grey]> snake : 告诉
+note right
+抓了葫芦娃趁早把炼丹神炉弄到手
+免得夜长梦多
+end note
+
+@enduml
+

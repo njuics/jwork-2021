@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+actor "葫芦金刚" as hulu
+actor "伸手大王" as stretching  #grey
+actor "刺猬精" as hedgehog   #purple
+entity "石头" as rock    #brown
+stretching -> hulu:告诉
+note right
+我乃伸手大王，我的手可长着呢！
+就是天王老子从这里过，也要留下
+买路财！
+end note
+hulu->stretching:告诉
+note left
+你可真是处处伸手,死不要脸！
+嗯，我除了肚子里的东西，啥都没有！
+end note
+stretching -> hulu:告诉
+note right
+什么？
+end note
+hulu->stretching:告诉
+note left
+屁你要不要？
+end note
+hulu-[#blue]>hulu:笑
+hedgehog-[#blue]>hedgehog:笑
+stretching -> hulu:告诉
+note right
+好你个小东西！我看你好东西多着呢！
+你的。。。都要留下！
+end note
+hulu-[#blue]>hulu:吐吐沫
+hulu->stretching:告诉
+note left
+你痴心妄想，白日做梦！
+end note
+stretching -> hulu:告诉
+note right
+要不就把你胸膛里
+热乎乎的红心留下！
+end note
+hulu-[#blue]>hulu:生气
+hulu-[#red]>stretching:攻击
+note left
+喷火
+end note
+stretching -> hulu:告诉
+note right
+哈哈，我不拍谁也不怕火，
+就怕给我的东西不够！
+end note
+par
+stretching-[#red]>hedgehog:攻击
+note right
+掐住
+end note
+hulu-[#blue]>hulu:躲避，跳到悬崖上
+end
+hedgehog-[#blue]>hedgehog:吐血
+hulu-[#red]>stretching:攻击
+note left
+石头砸
+end note
+stretching-[#blue]>stretching:断成两截，死了
+@enduml

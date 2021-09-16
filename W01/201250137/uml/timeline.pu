@@ -1,0 +1,88 @@
+@startuml 葫芦兄弟
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3
+' 3:40~5:00
+actor   三娃    as  gourd       #Yellow
+actor   蝎子精  as  scorpion    #Purple
+entity  大刀    as  sword       
+actor   蛇精    as  snake       #Black
+actor   小妖    as  goblin      #Green
+entity  石门    as  stoneDoor   #White
+
+
+scorpion -[#Aqua]> sword : 拿着
+activate sword #Aqua
+
+stoneDoor -[#Pink]> stoneDoor : 开着呢
+
+gourd -[#Red]> scorpion : 造成伤害
+note left : 头槌 
+
+gourd -[#Pink]> gourd : 得意
+
+scorpion -[#Pink]> scorpion : 愤怒
+
+scorpion -[#Red]> gourd : MISS
+note right : 大刀砍
+
+gourd -[#Pink]> gourd : 使劲
+
+gourd -[#Red]> sword : 造成伤害
+note left : 手劈
+
+sword -[#Pink]> sword : 断成几截
+
+scorpion -[#Pink]> scorpion : 震惊
+
+scorpion -[#Pink]> scorpion : 愤怒
+
+gourd -[#Red]> sword : 造成伤害
+note left : 一阳指
+sword -[#Pink]> sword : 再破一个洞
+deactivate sword
+
+scorpion -[#Pink]> scorpion : 震惊
+
+gourd -[#Pink]> gourd : 得意
+
+scorpion -[#Pink]> scorpion : 变身
+
+gourd -[#black]> scorpion : 告诉
+note left : 来吧
+
+scorpion -[#Red]> gourd : 无效攻击
+note right : 夹
+
+gourd -[#LightGreen]> scorpion : 反伤
+
+gourd -[#black]> scorpion : 告诉
+note left : 哈哈哈哈哈，再来啊
+
+scorpion -[#Red]> gourd : 无效攻击
+note right : 夹
+
+gourd -[#LightGreen]> scorpion : 反伤
+
+scorpion -[#Black]> gourd : 告诉
+note right : 啊呀呀呀呀呀呀
+
+scorpion -[#Pink]> scorpion : 逃跑
+
+gourd -[#Black]> scorpion : 告诉
+note left : 你想跑！哪里走！
+
+snake -[#Black]> goblin : 告诉
+note left : 通通给我出来！
+
+goblin -[#Black]> snake : 告诉
+note right : 在
+
+snake -[#Black]> goblin : 告诉
+note left : 赶快把所有的石门给我关死，快！
+
+stoneDoor -[#Pink]> stoneDoor : 开始关
+
+scorpion -[#Black]> goblin : 告诉
+note left : 哎呀，自己人！
+
+stoneDoor -[#Pink]> stoneDoor : 关闭
+@enduml

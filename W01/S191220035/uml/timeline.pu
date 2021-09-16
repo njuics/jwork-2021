@@ -1,0 +1,72 @@
+
+@startuml
+actor       爷爷    as grandfather
+actor       二娃    as kidtwo #Orange
+actor       穿山甲  as manis   #Brown
+actor       黄蜂精  as bee #Yellow
+entity      石头    as stone #Grey
+
+grandfather --[#Gray]> stone : 听到破坏
+kidtwo --[#Black]> stone : 听到破坏
+manis --[#Black]> stone : 破坏
+grandfather --[#Black]> manis : 看向
+kidtwo --[#Black]> manis : 看向
+
+grandfather -[#Black]> manis : 告诉
+note left
+    是你！
+end note
+
+manis -[#Black]> grandfather : 告诉
+note right
+    嘘！
+end note
+
+manis --[#Black]> manis : 回头
+
+manis -[#Black]> grandfather : 告诉
+note right
+    爷爷，我救你们来了
+end note
+
+manis --[#Black]> grandfather : 跑向
+grandfather --[#Black]> manis : 抱住
+
+manis -[#Black]> grandfather : 告诉
+note right
+    老爷爷，快把那边的石板推开，
+    我在下边挖了个洞。
+    咱们，赶快逃出去吧！
+end note
+
+manis --[#Black]> grandfather : 带路
+manis --[#Black]> kidtwo : 带路
+manis --[#Black]> stone : 推
+grandfather --[#Black]> stone : 推
+kidtwo --[#Black]> stone : 推
+stone --[#Black]> stone : 移动
+manis --[#Black]> manis : 钻出山洞
+bee --[#Black]> bee : 飞入山洞
+
+bee -[#Black]> grandfather : 告诉
+note right
+    嗯？你们想干什么？
+end note
+
+grandfather -[#Black]> bee : 告诉
+note left
+    哎呀，腰疼啊。
+    哎呦，哎呦，哎呦。
+end note
+
+bee --[#Black]> bee : 跳起
+
+bee -[#Black]> grandfather : 告诉
+note right
+    腰疼有什么好哼哼的，
+    再哼哼，我劈了你！
+end note
+
+bee --[#Black]> bee : 飞出山洞
+@enduml
+

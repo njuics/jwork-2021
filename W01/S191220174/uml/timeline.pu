@@ -1,0 +1,67 @@
+
+
+@startuml
+actor       三娃   as threeboy 
+actor       蝎子精    as scorpion   #Purple 
+entity      刀  as knife #White
+entity      钳子一号  as claw1 #Green
+entity      钳子二号  as claw2 #Yellow
+
+threeboy-[#Blue]>threeboy:穿上裤子
+scorpion-[#Grey]>threeboy:嘲讽
+note right
+haha, you are in the nude.
+end note
+threeboy-[#Blue]>threeboy:无能狂怒
+threeboy-[#Red]>scorpion:造成伤害
+note left
+撞
+end note
+threeboy-[#Green]>threeboy:笑
+note left
+hahahahahaahahahahahaha
+end note
+scorpion-[#Green]>scorpion:挥刀
+threeboy-[#Green]>threeboy:躲避
+scorpion-[#Green]>scorpion:挥刀
+threeboy-[#Red]>knife:破坏
+scorpion-[#Blue]>scorpion:无能狂怒
+scorpion-[#Green]>scorpion:挥刀
+threeboy-[#Red]>knife:破坏
+scorpion-[#Blue]>scorpion:惊讶
+threeboy-[#Green]>threeboy:笑
+note left
+hahahahahaahahahahahaha
+end note
+scorpion-[#Blue]>scorpion:无能狂怒
+scorpion-[#Blue]>scorpion:化形
+threeboy-[#Grey]>scorpion:告诉
+note left
+Come on!Let's van you see.
+end note
+scorpion-[#Red]>threeboy:试图伤害
+note right
+夹
+end note
+threeboy-[#Red]>claw1:破坏
+scorpion-[#Blue]>scorpion:化形
+threeboy-[#Grey]>scorpion:告诉
+note left
+Come again!I will show you the deep dark fantasy.
+end note
+scorpion-[#Red]>threeboy:试图伤害
+note right
+夹
+end note
+threeboy-[#Red]>claw2:破坏
+threeboy-[#Red]>scorpion:造成伤害
+note left
+反击
+end note
+scorpion-[#Blue]>scorpion:哀嚎
+threeboy-[#Grey]>scorpion:嘲讽
+note left
+Just this?
+end note
+scorpion-[#Blue]>scorpion:逃跑
+@enduml

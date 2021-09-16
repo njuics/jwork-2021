@@ -1,0 +1,61 @@
+@startuml
+
+class Being
+
+class Creature{
+    String name
+    int health
+    int attack
+    int defense
+    String[] memory
+    int memoryOffset
+
+    getName()
+    speakTo()
+    listen()
+    attack()
+    receiveAttack()
+    isDead()
+    laugh()
+    shout()
+    shock()
+    move()
+}
+
+class Weapon{
+    int value
+    String name
+    
+    getName()
+    getValue()
+}
+
+class Monster{
+    int magic
+
+    useWeapon()
+    loseWeapon()
+    dance()
+}
+
+class Huluwa{
+    int magic
+}
+
+class Sanwa{
+    harder()
+}
+
+Creature --|> Being
+
+Weapon --|> Being
+
+
+Huluwa --|> Creature
+
+Monster --|> Creature
+
+
+Sanwa --|> Huluwa
+
+@enduml

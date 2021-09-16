@@ -1,0 +1,59 @@
+@startuml
+actor       葫芦娃  
+actor       蛇精    #Black 
+actor       大王    #Purple 
+entity      石头    #White
+
+蛇精 -[#Yellow]> 石头: 登上
+大王 -[#Yellow]> 石头: 登上
+石头 -[#Yellow]> 石头: 上升
+
+葫芦娃 -[#Grey]> 蛇精 : 告诉
+note left
+    妖精，
+    快还我爷爷！
+end note
+
+蛇精 -[#Grey]> 葫芦娃 : 告诉
+note right
+    嗯~嗯~~，
+    可以，可以。
+    你这娃娃倒是一片孝心。
+    你爷爷就在这，
+    你亲妈也在这，
+    快给我磕头！
+end note
+
+葫芦娃 -[#Grey]> 蛇精 : 告诉
+note left
+    呸！
+    真不要脸！
+end note
+
+大王 -[#Grey]> 大王 :
+note right
+    咦哈哈哈哈！
+end note
+
+葫芦娃 -[#Grey]> 大王 : 告诉
+note left
+    今天，
+    要是不把我爷爷放了，
+    我就把你这妖洞
+    砸的粉碎！
+end note
+
+大王 -[#Grey]> 大王 :
+note right
+    啊哈哈哈哈！
+end note
+
+大王 -[#Red]> 葫芦娃 : 长矛攻击
+
+葫芦娃 -[#Red]> 大王 : 长矛攻击
+
+蛇精 -[#Red]> 葫芦娃 : 如意攻击
+
+葫芦娃 -[#Blue]> 葫芦娃 : 冰冻
+
+@enduml

@@ -1,0 +1,61 @@
+@startuml 葫芦兄弟
+
+class Being{
+    double hp;
+    double defence;
+    boolen isDead();
+}
+
+class Creature{
+    int memorySize;
+    double aggressivity;
+    String name;
+    String[] memoryContent;
+    int numberOfOnceRemembered;
+    speakTo();
+    listen();
+    complacent();
+    angery();
+    shock();
+    workHard();
+    attack();
+    beAttacked();
+    badAttacked();
+    miss();
+    runAway();
+    String toString();
+}
+
+class Broadsword{
+    cutOff();
+    broken();
+    broke();
+}
+
+class Gourd{
+    specialAbility;
+    beAttacked();
+}
+
+class Monster{
+    Broadsword sword;
+    evolve();
+    block();
+}
+
+class StoneDoor{
+    open();
+    shutDown();
+    nip();
+}
+
+
+
+Being <|-- Creature
+Being <|-- Broadsword
+Being <|-- StoneDoor
+Creature <|-- Monster
+Creature <|-- Gourd
+
+
+@enduml

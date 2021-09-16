@@ -1,0 +1,90 @@
+@startuml timeline
+actor IronKid as IronKid
+actor snake as snake #Purple
+actor rat as rat #Gray
+actor frog as frog #Green
+actor beast as beast #Black
+entity sword as sword #White
+entity chain as chain #Black
+entity hammer as hammer#Black
+IronKid -> snake : scoff
+note over IronKid 
+你这断了头的
+宝剑有什么好怕的，
+还有什么招快使出来，
+平头剑又不会长个。 
+end note
+snake -> IronKid :  scoff back
+note over snake
+铁娃子，别着急啊
+我这宝剑就是会长个~
+这下，看你能砍的断吗？
+end note
+sword -> sword : restore
+IronKid -> snake : speak to
+note over IronKid
+哦？
+end note
+IronKid -> sword : hit repeatedly
+sword -> sword : broken and restore over and over
+snake -> IronKid : scoff
+note over snake
+哈哈哈哈哈
+啊哈哈哈哈
+end note
+IronKid -> IronKid : get tired
+snake -> IronKid : attack
+IronKid -> IronKid : run
+frog -> IronKid : try to catch
+rat -> IronKid : try to catch
+chain -> IronKid : trap
+IronKid -> IronKid : trapped
+IronKid -> IronKid : freed
+IronKid -> frog : attack
+IronKid -> rat : attack
+chain -> chain : broken
+note over frog,rat
+啊啊啊！
+end note
+note over IronKid
+哈哈哈哈~
+end note
+IronKid -> IronKid:run
+beast -> IronKid : attack
+note over beast
+嘿！
+end note
+IronKid -> IronKid : shout and fall
+note over IronKid
+啊啊~
+end note
+beast -> IronKid : scoff
+note over beast
+嗯？
+起来，快起来啊？
+这小子，这下完蛋了吧！
+end note
+rat -> beast:speak to
+note over beast
+鳄鱼头领真是厉害啊！
+躲在暗处这么给他一锤！
+end note
+beast -> rat:speak to
+note over beast
+这混小子，
+这回总算栽在我手里了。
+end note
+snake -> beast : speak to
+note over snake
+难道靠你这么一槌，
+这铁娃子就完蛋了吗？
+（轻蔑地笑）
+end note
+IronKid -> IronKid : awake
+IronKid -> frog : attack
+IronKid -> rat:attack
+beast -> IronKid: cast hammer
+hammer -> IronKid:attack
+IronKid -> hammer:attack
+hammer -> hammer:broken
+@enduml

@@ -1,0 +1,53 @@
+@startuml
+
+class Being {
+
+}
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+    int enemy
+    int down
+
+    String name
+    String[] memory
+    int memoryOffset
+
+    speakTo()
+    listen()
+    attack()
+    receiveAttack()
+    detect()
+    watch()
+    isDead()
+}
+
+class Human{
+    ready()
+    finish()
+    happy()
+    warning()
+}
+
+class Monster{
+    int magic
+    surprise()
+    angry()
+}
+
+class Bee_Bomber{
+    launch()
+}
+
+Creature --|> Being
+
+Human --|> Creature
+
+Monster --|> Creature
+
+Bee_Bomber --|> Monster
+
+@enduml

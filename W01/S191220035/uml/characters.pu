@@ -1,0 +1,58 @@
+@startuml
+
+class BeeGoblin{
+    flyIn()
+    jumpWithAngry()
+    flyOut()
+}
+
+class Character{
+    String name
+    String mood
+
+    speakto()
+    heard()
+    moodChange()
+    getName()
+}
+
+class Grandfather{
+    heardDamage()
+    lookAtMp()
+    hugMP()
+    followMP()
+    pushStone()
+}
+
+class KidTwo{
+    heardDamage()
+    lookAtMp()
+    followMP()
+    pushStone()
+}
+
+class ManisPentadactyla{
+    breakStone()
+    turnBack()
+    runToGrandfather()
+    leadOthers()
+    pushStone()
+    getOut()
+}
+
+class Thing{
+    getName()
+}
+
+class Stone{
+    beDamaged()
+    bePush()
+}
+
+BeeGoblin --|> Character
+Grandfather --|> Character
+KidTwo --|> Character
+ManisPentadactyla --|> Character
+Stone --|> Thing
+
+@enduml

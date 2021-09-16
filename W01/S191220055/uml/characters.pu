@@ -1,0 +1,55 @@
+@startuml
+
+class Being{
+    String name
+
+    getName()
+}
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+    boolean is_dead
+
+    speak()
+    attack()
+    receiveAttack()
+    isDead()
+}
+
+class Human{
+    hide()
+    run()
+    useWindAccompanyingEar()
+}
+
+class Monster{
+    rolleyes()
+    lookForTarget()
+    drawWeb()
+    sleep()
+    wakeup()
+}
+
+class Pangolin{
+    attack()
+    hide()
+    run()
+    bait()
+}
+class SpiderWeb{
+    capture()
+}
+
+Creature --|> Being
+SpiderWeb --|> Being
+
+Human --|> Creature
+Pangolin --|> Creature
+Monster --|> Creature
+
+
+
+@enduml

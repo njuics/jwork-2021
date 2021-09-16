@@ -1,0 +1,125 @@
+@startuml
+actor 金刚葫芦娃 as HuluWa
+actor 伸手大王 as Monster #blue
+actor 小刺猬 as kindCreature #purple
+entity 大岩石 as Rock #black
+
+HuluWa -> Monster :飞撞
+HuluWa -> Monster: 告诉
+note left
+什么东西这么硬，
+真像一块铁疙瘩
+end note
+Monster -[#blue]> HuluWa: 告诉
+note right
+噢~
+原来是个小毛孩，
+你到我这来不带点礼物，
+不带点东西，
+就想闯过去，
+没那么容易吧
+end note
+HuluWa -> Monster: 告诉
+note left
+呔，
+你是什么妖精，
+敢挡我的去路，
+你可知我葫芦小金刚的厉害
+end note
+Monster -[#blue]> HuluWa: 告诉
+note right
+桀桀桀，
+什么金刚葫芦，
+金刚葫芦的，
+我乃伸手大王，
+我的手可长着呢，
+不管什么人，
+就算天王老子从我这过，
+也得留下买路钱。
+end note
+HuluWa -> Monster: 告诉
+note left
+你可真是处处伸手死不要脸，
+嗯~，
+end note
+HuluWa -> HuluWa: 转眼珠
+HuluWa -> Monster: 告诉
+note left
+我除了肚子里的那个东西，
+什么也没有带
+end note
+Monster -[#blue]> HuluWa: 告诉
+note right
+什么东西
+end note
+HuluWa -> Monster: 告诉
+note left
+屁你要不要啊
+end note
+Monster -[#blue]> HuluWa: 告诉
+note right
+好你个小东西，
+哈哈，
+我看你身上的宝贝可多着呢，
+那眼睛，
+鼻子，
+你的手你的脚，
+你的小屁股，
+还有你那小计基，
+都得给我留下，
+桀桀桀
+end note
+HuluWa -> Monster: 告诉
+note left
+呸，
+你痴心妄想、白日做梦，
+你——真不要脸
+end note
+Monster -[#blue]> HuluWa: 告诉
+note right
+要不把你胸脯里那颗
+热乎乎的红心送给我，
+我就放你过去
+end note
+HuluWa -> Monster: 告诉
+note right
+呀呀呀呀呀呀
+end note
+HuluWa -> Monster: 生气
+HuluWa -> Monster: 造成伤害
+note left
+喷火
+end note
+Monster -[#blue]> HuluWa: 告诉
+note right
+哈哈哈，
+我不怕火，
+也不怕水，
+就怕给我的东西太少了，
+哈哈哈
+end note
+Monster -[#blue]> HuluWa: 使用能力
+note right
+变长
+end note
+Monster -[#blue]> kindCreature: 造成伤害
+note left
+抓
+end note
+HuluWa -> HuluWa: 使用能力
+note left
+跳高
+end note
+Rock -[#black]> HuluWa:产生伤害加成
+note right
+石头断裂
+end note
+HuluWa -> Monster: 造成伤害
+note left
+踩断石头
+end note
+Monster -[#blue]> Monster: 死
+note right
+啊，我死了
+end note
+@enduml

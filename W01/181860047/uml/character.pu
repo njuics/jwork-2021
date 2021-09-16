@@ -1,0 +1,36 @@
+@startuml
+Class Creature{
+    private int spirit;
+    private int health;
+    private int alcoholDefense;
+    private String name;
+    public String getName();
+    public int getHealth();
+    speakTo()
+    isDruken():boolean
+    listen();
+    drinkAlcohol(Wine);
+}
+Class Human{
+    Durkensying()
+    sign1();
+    sign2();
+}
+Class Monster{
+   magic(int String): Wine
+   provideAlcohol(Creature,int,String)
+   sign1();
+   sign2();
+   sign3();
+
+}
+Class Wine{
+   int count;
+   int alcoholdegree;
+   String name;
+   Countdec();
+
+}
+Creature <|-- Human
+Creature <|-- Monster
+@enduml

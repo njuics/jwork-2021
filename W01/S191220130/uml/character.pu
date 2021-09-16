@@ -1,0 +1,55 @@
+@startuml
+
+class Object
+{
+    String name
+}
+
+class Rock
+{
+    Character[] hold
+    int point
+    State state
+
+    Bear()
+    Rise()
+    Fall()
+}
+
+class Character
+{
+    int hp
+    int ap
+    Tool tool
+    State state
+
+    Speak()
+    Get_Tool()
+    Normal_Attack()
+    Tool_Attack()
+    Abandon_Tool()
+    Be_Attacked()
+    Be_Frozen()
+
+}
+
+class Tool
+{
+    int durability
+    int damage
+
+    Get_Name()
+    Damage()
+}
+
+class RuYi
+
+class Spear
+
+Character --|> Object
+Rock --|> Object
+Tool --|> Object
+RuYi --|> Tool
+Spear --|> Tool
+
+@enduml
