@@ -1,0 +1,79 @@
+@startuml
+abstract class Factory{
+
+}
+class WeaponFactory{
+    {static}createWeapon()
+    {static}createMagicWeapon()
+}
+class MonsterFactory{
+    {static}createMonster()
+}
+class GourdFactory{
+    {static}createGourd(Color color)
+}
+
+
+class MagicWeapon{
+    attack(Creature b, int ap)override
+}
+class Weapon{
+    update();
+}
+abstract class Being{
+    int health;
+    int attack;
+    int defense;
+    String name;
+    isDead()
+    attack(Being b)
+   
+}
+
+class Creature { 
+    receiveAttack(int ap)
+    receiveControl(Weapon weapon)
+    speakTo()
+    listen()
+}
+class YellowGourd{
+    receiveAttack()override
+}
+class Gourd{
+
+}
+class Scorpion{
+
+}
+class Snake{
+    updateWeapon()
+    attack()override
+}
+class Monster{
+    fear()
+}
+GourdFactory..>Gourd
+MonsterFactory..>Monster
+WeaponFactory..>Weapon
+
+WeaponFactory --|> Factory
+MonsterFactory --|>Factory
+GourdFactory --|>Factory
+
+MagicWeapon --|>Weapon
+
+Weapon --|>Being
+
+Creature --|> Being
+
+Gourd --|> Creature
+
+Scorpion --|> Monster
+
+Snake --|> Monster
+
+Monster --|> Creature
+
+YellowGourd --|>Gourd
+
+@enduml

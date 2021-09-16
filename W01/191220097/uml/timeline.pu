@@ -1,0 +1,66 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3
+' 6:57 ~ 8:32
+
+@startuml
+actor       三娃   as calabashThree 
+actor       蛇精    as snake  #Black 
+actor       蝎子精    as scorpion   #Purple 
+
+calabashThree -[#Green]> snake : 告诉
+note left: 我来了！
+
+calabashThree -[#Green]> calabashThree : 打碎魔镜
+
+snake -[#Grey]> snake : 惊怒且痛苦
+scorpion -[#Violet]> scorpion : 无能狂怒,嚎啕大哭
+scorpion -[#Violet]> scorpion : 颤抖的手捧着稀碎的魔镜
+
+
+calabashThree -[#Green]> snake : 告诉
+note left: 你们这些害人精还不快投降！
+
+snake -[#Grey]> snake : 转眼珠
+snake -[#Grey]> snake : 嚣张大笑
+snake -[#Grey]> calabashThree : 告诉
+note right
+你凭着一身钢筋铁骨就如此夸口，
+你可知道老娘的厉害！
+end note 
+
+calabashThree -[#Green]> calabashThree : 不屑大笑
+calabashThree -[#Green]> snake : 告诉
+note left: 你有什么本事，诶！就拿出来吧！
+
+snake -[#Grey]> calabashThree : 告诉
+note right: 好哇！
+snake -[#Grey]> calabashThree : 挥动宝剑
+
+calabashThree -[#Green]> calabashThree :哈哈大笑
+snake -[#Grey]> snake : 感到被狠狠地挑衅了
+snake -[#Grey]> calabashThree : 告诉
+note right: 你难道不怕我这宝剑？
+
+calabashThree -[#Green]> calabashThree :满不在乎
+calabashThree -[#Green]> snake : 告诉
+note left: 你干脆把所有的兵器都拿出来吧，我还可以陪你玩玩
+
+snake -[#Grey]> calabashThree : 告诉
+note right: 只要你顶得住我三剑，我就缴械投降还你哥哥
+
+calabashThree -[#Green]> calabashThree :大大的眼睛里写满了天真
+calabashThree -[#Green]> snake : 告诉
+note left: 好，说话算话！诶，慢着，谁要是赖皮，谁就是孬种！
+
+snake -[#Grey]> calabashThree : 看剑！
+
+snake -[#Red]> calabashThree : 造成伤害
+note left: 宝剑攻击
+
+snake -[#Red]> calabashThree : 造成伤害
+note left: 宝剑攻击
+
+calabashThree -[#Green]> snake : 告诉
+note left: 到底是个女人，我的头可不是面团捏的！
+
+@enduml
+

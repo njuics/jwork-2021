@@ -1,0 +1,90 @@
+@startuml timeline
+actor   三娃    as boy      #Blue
+actor   蝎子精  as scorpion #Red
+actor   黄蜂    as hornet   #Green 
+entity  旋风    as wind     #Black
+entity  叉子    as fork     #Yellow
+
+wind        -> wind     : 袭来
+
+scorpion    -> scorpion : 出现
+hornet      -> hornet   : 出现
+
+wind        -> wind     : 消失
+
+scorpion    -> boy      : 喊叫
+note right 
+啊啊啊啊啊啊啊啊...
+end note
+
+boy         -> scorpion : 笑
+note left 
+哈哈哈哈哈哈哈
+end note
+
+fork        -> fork     : 弯曲
+
+boy         -> fork     : 装备
+
+boy         -> fork     : 固定
+
+boy         -> fork     : 用力拉直
+
+hornet      -> boy      : 攻击
+
+boy         -> hornet   : 用叉子挡住攻击
+
+hornet      -> boy      : 一齐攻击
+
+boy         -> hornet   : 横档攻击
+
+hornet      -> boy      : 毒箭攻击
+
+boy         -> boy      :俯身
+note left
+好痒...好痒...
+end note
+
+boy         -> hornet   : 挡住了所有毒箭
+
+scorpion    -> boy      : 冲刺劈砍
+
+boy         -> scorpion : 横档
+
+boy         -> boy      : 冲刺到身后
+
+boy         -> scorpion : 刺击
+
+scorpion    -> fork     : 砍断
+
+boy         -> boy     : 惊讶
+note left
+啊!
+end note
+
+scorpion    -> boy      : 蓄力一击
+note right
+哇~呀呀呀呀呀呀!!
+end note
+
+boy         -> scorpion : 闪过
+
+boy         -> scorpion : 双腿蹬倒
+
+boy         -> scorpion : 投掷叉柄
+
+scorpion    -> fork     : 用尾巴绞断
+
+boy         -> scorpion : 投掷叉头
+
+scorpion    -> fork     : 用尾巴绞断
+
+scorpion    -> scorpion : 露出本体
+
+scorpion    -> boy      : 用尾巴钩住
+
+boy         -> boy      : 被钩住
+
+scorpion    -> boy      : 用尾巴甩飞
+
+@enduml

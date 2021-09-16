@@ -1,0 +1,36 @@
+@startuml characters 
+
+class Being{
+    String name
+}
+
+class Creature{
+    int damage
+    int defence
+    Utility equipment
+    equip()
+    action()
+    attack()
+}
+
+class Utility{
+    String state
+
+    change()
+}
+
+class MainCharater{
+    String[] words
+
+    speak()
+    control()
+}
+
+Creature           --|> Being
+
+Utility            --|> Being
+
+MainCharater       --|> Creature
+
+
+@enduml
