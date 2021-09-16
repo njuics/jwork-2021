@@ -1,0 +1,59 @@
+@startuml
+actor       二娃   as erwa #Orange
+actor       蛇精    as snake  #Black
+actor       蝎子精    as scorpion   #Purple
+actor       蛤蟆头领   as frogBoss  #Green
+entity      水晶石  as stone #White
+
+
+snake -[#Grey]> snake : 自言自语
+note right
+    睡吧睡吧
+end note
+
+scorpion -[#Grey]> snake : 告诉
+note left: 这宝贝可真神
+
+erwa -[#Green]> erwa : 睁开千里眼
+
+snake -[#Green]> snake : 被千里眼照
+
+
+snake -[#Grey]> scorpion : 告诉
+note right
+    这是什么光……
+end note
+
+scorpion -[#Grey]> snake : 告诉
+note right
+    待我去查看查看…
+end note
+
+stone -[#Blue]> stone : 打开
+scorpion -[#Blue]> stone : 看到画面
+
+scorpion -[#Grey]> snake : 告诉
+note right: 又是一个葫芦娃
+
+snake -[#Grey]> scorpion : 告诉
+note left: 不好这第二个葫芦娃……
+
+stone -[#Blue]> stone : 关上
+
+scorpion -[#Grey]> frogBoss : 告诉
+note right: 蛤蟆首领！
+
+frogBoss -[#Grey]> scorpion : 告诉
+note right: 在！
+
+scorpion -[#Grey]> frogBoss : 大声告诉
+note right: 把那老头和葫芦娃……
+
+snake -[#Grey]> scorpion : 告诉
+note right: 轻点声
+
+frogBoss -[#Red]> frogBoss : 跳
+
+scorpion -[#Grey]> frogBoss : 小声告诉
+note right: 关到十八层地洞里去
+@enduml

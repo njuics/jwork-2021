@@ -1,0 +1,36 @@
+@startuml
+class Being
+class Creatrue{
+    int health
+    int attack
+    int defense
+    String name
+    speakTo()
+    listen()
+    attack()
+    receiveAttack()
+    isDead()
+}
+
+class erwa{
+    openEye()
+}
+
+class Monster{
+    jump()
+    look()
+    isLooked()
+}
+
+class Stone{
+    open()
+    close()
+}
+
+Creatrue --|> Being
+Stone --|> Being
+
+erwa  --|> Creatrue
+
+Monster --|> Creatrue
+@enduml
