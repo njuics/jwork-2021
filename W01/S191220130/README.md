@@ -10,11 +10,12 @@ http://www.plantuml.com/plantuml/png/dPB1RjCm6CVlVWfBE_C2FQ1f5ww82qA8GxKPLk6jA3X
 
 
 运行结果：
+···
 The Rock:蛇精 get on me!
 The Rock:大王 get on me!
 The Rock:Rise!
 葫芦娃:妖精，快还我爷爷！
-蛇精:嗯~嗯~~，可以，可以。你这娃娃倒是一片孝心。你爷爷就在这，你亲妈也在这，快给我磕头！
+蛇精:嗯~嗯~，可以，可以。你这娃娃倒是一片孝心。你爷爷就在这，你亲妈也在这，快给我磕头！
 葫芦娃:呸！真不要脸！
 大王:咦哈哈哈哈哈哈哈哈哈！
 葫芦娃:今天，要是不把我爷爷放了，我就把你这妖洞砸的粉碎！
@@ -31,3 +32,4 @@ The Rock:Rise!
 蛇精:I use RuYi to attack 葫芦娃!
 葫芦娃:I lose 5 HP!
 葫芦娃:I am frozen!
+···
