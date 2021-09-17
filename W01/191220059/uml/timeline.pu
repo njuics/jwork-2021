@@ -1,0 +1,63 @@
+'https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=6
+'2:40--4:40
+@startuml first_homework
+actor       蝎子精    as xiezijing  #Black
+actor       三娃   as sanwa
+actor       蚂蚁兵    as antman1   #Purple
+
+antman1 -[#Grey]> sanwa : 大喊
+note right
+    哇呀呀呀呀呀！
+end note
+
+sanwa -[#Grey]> antman1 : 大喊
+note left
+    啊！！！
+end note
+
+antman1 -[#Red]> sanwa : 攻击
+sanwa -[#Red]> antman1 : 攻击
+
+antman1 -[#Blue]>antman1 : 换弓箭
+antman1 -[#Red]> sanwa : 射箭
+
+sanwa -[#Grey]> antman1 : 大笑
+note left
+    哈哈哈好痒，好痒啊！
+end note
+
+xiezijing -[#Blue]-> xiezijing : 发怒
+xiezijing -[#Red]> sanwa : 攻击
+xiezijing -[#Blue]> xiezijing : 变身蝎子
+xiezijing -[#Blue]> xiezijing : 换钩子
+xiezijing -[#Red]> sanwa : 勾掉裤子
+xiezijing -[#Grey]> sanwa : 告诉
+note left
+    哈哈！你逃不了了！
+end note
+xiezijing -[#Blue]> xiezijing : 变身人形
+xiezijing -[#Blue]> xiezijing : 换大刀
+sanwa -[#Blue]-> sanwa : 发怒
+sanwa -[#Red]> xiezijing : 攻击
+sanwa -[#Red]> xiezijing : 毁掉了武器
+sanwa -[#Grey]> xiezijing : 大喊
+note right
+    哈哈哈啊哈哈啊！
+end note
+xiezijing -[#Blue]> xiezijing : 换钳子
+sanwa -[#Grey]> xiezijing : 告诉
+note right
+    来啊！
+end note
+xiezijing -[#Red]> sanwa : 攻击
+xiezijing -[#Red]> xiezijing : 武器被毁
+sanwa -[#Grey]> xiezijing : 大喊
+note right
+    哈哈哈哈哈！
+end note
+xiezijing -[#Blue]> xiezijing : 变身旋风
+xiezijing -[#Purple]> xiezijing : 逃跑
+sanwa -[#Grey]> xiezijing : 大喊
+note right
+    别想跑！哪里走！
+end note

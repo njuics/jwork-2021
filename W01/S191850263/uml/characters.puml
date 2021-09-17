@@ -1,0 +1,45 @@
+@startuml
+class Being {
+String name
+}
+class Creature{
+int health
+int attack
+int defense
+int memoryset
+String[] memory
+speakTo()
+listen()
+attack()
+receiveAttack()
+spiteBlood()
+laugh()
+isDead()
+move()
+
+}
+class Monster{
+
+}
+class Rock{
+String sharpDegree
+int weight
+beThrownAt()
+}
+class huluKingDong{
+fireAttack()
+rockAttack()
+angry()
+evade()
+spit()
+}
+class stretchHandMonster{
+catchAttack()
+}
+Creature--|>Being
+huluKingDong..>Rock
+Rock--|>Being
+stretchHandMonster--|>Monster
+Monster--|>Creature
+huluKingDong--|>Creature
+@enduml

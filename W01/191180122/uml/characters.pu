@@ -1,0 +1,54 @@
+@startuml
+Being <|-- Creature
+Goods <|-- Cup
+Goods <|-- Stone
+Creature <|-- Monster
+Creature <|-- Calabash_Brother
+Calabash_Brother <|-- FireBrother
+
+class Creature{
+    int health
+    int attack
+    int defense
+    String name
+    String[] memory
+    int memoryoffset
+
+    speakTo()
+    lisen()
+    attack()
+    receiveAttack()
+    isDead()
+    move()
+}
+
+class Calabash_Brother{
+    int magic
+    rolleyes()
+    standUp()
+    drinkWater()
+}
+
+class Cup{
+    int waterCapacity
+    isHot()
+}
+
+class FireBrother{
+    fire()
+}
+
+class Goods{
+    int temperature
+    String name
+}
+
+class Monster{
+   int magic
+   beHappy()
+   beSurprised()
+   escape()
+   fillWater()
+}
+
+@enduml

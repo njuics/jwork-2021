@@ -1,0 +1,80 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3
+' 2:50 ~ 3:46
+
+@startuml
+actor       六娃   as sixwa 
+actor       蝙蝠兵   as bianfubing   #Gray
+actor       青蛙精    as qingwajing  #Black 
+actor       蜈蚣精    as wugongjing   #Purple 
+entity      酒壶  as jiuhu #SkyBlue
+entity      钉子  as dingzi #DarkBlue
+entity      蛛网  as spiderweb #White
+entity      大门  as damen #Black
+
+sixwa -[#Grey]> jiuhu : 拿起
+
+sixwa -[#Grey]> jiuhu : 使用
+
+jiuhu -[#Green]> qingwajing : 吸引
+
+sixwa -[#Grey]> jiuhu : 放下
+
+qingwajing -[#Blue]> damen : 前进
+
+damen -[#Black]> damen : 开 
+
+sixwa -[#Grey]> sixwa : 隐身 
+
+qingwajing -[#Green]> jiuhu : 拿起
+
+sixwa -[#Blue]> damen : 前进
+
+qingwajing -[#Blue]> damen : 前进
+
+damen -[#Black]> damen : 关
+
+qingwajing -[#Green]> jiuhu : 踢
+
+jiuhu -[#Green]> wugongjing : 吸引
+
+wugongjing -[#Green]> qingwajing : 告诉
+note right
+    谁？
+end note
+
+qingwajing -[#Green]> wugongjing : 告诉
+note left
+    哈哈哈哈哈，我扔了个空酒壶，
+    又惹到你们了，大惊小怪！
+end note
+
+sixwa -[#Grey]> dingzi : 拿起
+
+sixwa -[#Grey]> dingzi : 使用
+
+dingzi -[#Green]> wugongjing : 吸引
+
+wugongjing -[#Green]> bianfubing : 说
+note right: 你在这儿守着，别走开啊！
+
+wugongjing -[#Blue]> dingzi : 前进
+
+wugongjing -[#Green]> bianfubing : 说
+note right: 可别打盹！把眼睛睁大点！
+
+wugongjing -[#Blue]> dingzi : 前进
+
+sixwa -[#Grey]> dingzi : 放下
+
+dingzi -[#Red]> wugongjing: 刺伤
+
+wugongjing -[#Green]> spiderweb : 触发
+
+spiderweb -[#Red]> wugongjing : 困住 
+
+qingwajing -[#Green]> wugongjing : 说
+note left: 哈哈，又掉进网里了吧！
+
+sixwa -[#Grey]> sixwa : 显形
+
+@enduml

@@ -1,0 +1,66 @@
+@startuml
+actor 大娃 as fo #red
+actor 蛇精 as fo1 #Yellow
+actor 蝎子精 as fo2 #Black
+actor 蜈蚣精 as fo3 #Green
+
+fo->fo1:告诉
+note left
+    妖精，
+    快还我爷爷，
+    快还我爷爷
+end note
+
+fo1->fo:告诉
+note right
+    可以可以，
+    你这娃娃倒是一片孝心，
+    你爷爷在这，
+    你亲妈也在这，
+    快给我磕头
+end note
+
+fo->fo1:告诉
+note left:呸，真不要脸
+
+fo2->fo:笑
+note right:哈哈哈哈哈哈哈哈
+
+fo->fo1:告诉
+note left
+    今天要是不把我爷爷放了，
+    我就把你这妖洞砸得粉碎
+end note
+
+fo2->fo:告诉
+note right:哦？哈哈哈哈哈哈
+
+
+fo2-[#Black]>fo:扔枪
+
+fo-[#Green]>fo:接枪，掰断
+
+fo-[#Black]>fo2:扔枪
+
+fo->fo2:告诉
+note left:哈哈哈哈哈哈
+
+fo1-[#Blue]>fo:吹冰风
+
+fo-[#Blue]>fo:结冰，破冰
+
+fo3-[#Green]>fo3:上场
+
+fo3-[#red]>fo:打架
+
+fo-[#red]>fo3:造成伤害
+
+fo3-[#Green]>fo3:变大
+
+fo-[#Green]>fo:变大
+
+fo-[#red]>fo3:踩
+
+fo3-[#Grey]>fo3:逃走
+
+@enduml

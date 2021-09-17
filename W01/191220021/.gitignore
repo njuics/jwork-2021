@@ -1,0 +1,6 @@
+# My configurations:
+.vscode
+# 排除.class 文件
+*.class
+# 排除输出文件
+out

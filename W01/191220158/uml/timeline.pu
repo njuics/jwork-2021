@@ -1,0 +1,102 @@
+'https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=19  
+'14:40-16:33
+
+@startuml
+
+actor 葫芦小金刚 as Hero
+actor 金刚大王 as Boss #black
+actor 刺猬 as Animal  #yellow
+
+Boss -[#Black]> Hero :speaks
+note right
+    What a Gourd baby！ 
+    I've heard your name for a long time. 
+    I also know your weakness!
+end note
+
+Boss -[#Black]> Boss : Laugh loudly
+
+Boss -[#Black]> Hero :speaks
+note right
+    Your weakness is that you are afraid of spanking with a stick. 
+    Your weakness is on your hip!
+end note
+
+Hero -> Hero : Roll eyes
+
+Hero -> Boss :speaks
+note left
+   Goblin!
+   Don't brag,
+   don't you have a weakness?
+end note
+
+Boss -[#Black]> Boss : Look at his navel
+
+
+Boss -[#Black]> Hero :speaks
+note right
+    I have no weakness,
+    What weakness do I have?
+     I am invincible!
+end note
+
+Boss -[#Black]> Boss : Laugh loudly
+
+Boss -[#Black]> Hero :Try to grab
+
+Hero -> Boss : 灵巧地避开了
+
+Hero ->Hero : 变成了巨人！
+
+Hero -> Boss : attack
+note left:攻击无效！
+
+Boss -[#Black]> Hero :Try to grab
+
+Hero -> Boss : 被抓住了
+
+Hero ->Hero :Hide on bush!
+
+Hero->Boss : 从抓技中逃脱
+
+Hero ->Hero :Invisiable!
+
+Boss-[#Black]>Hero : Thousand eye!
+
+Hero ->Hero :visiable!
+
+Hero -> Boss : attack
+note left:攻击还是无效！
+
+Boss -[#Black]> Hero :Try to grab
+
+Hero -> Boss : 被抓住了
+
+Boss -[#Black]> Hero :speaks
+note right
+    HA HA HA!
+    There is no escape for you！
+end note
+
+Animal -[#Blue]>Boss :attack
+note right:攻击无效！
+
+Animal -[#Blue]>Animal :fall off a cliff
+
+Animal -[#Blue]>Animal: A big rock fall on him.
+
+Animal -[#Blue]>Animal :dead
+
+Hero -> Hero : Angry
+
+Hero -> Boss : Attack on weakness!
+note left:致命一击！
+
+Boss -[#Black]>Boss :dead
+
+Hero -> Hero : Laugh loudly
+
+Hero -> Hero : No more a giant
+
+@enduml

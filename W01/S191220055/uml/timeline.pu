@@ -1,0 +1,63 @@
+@startuml
+actor       老人   as oldman
+actor       二娃    as erwa  #Orange
+actor       穿山甲    as pangolin   
+actor       蜈蚣怪    as centipede 
+actor       蜘蛛怪    as spider   
+entity      蛛网  as spiderweb #White
+
+'发现追兵
+spider -[#Green]> spider : 睡觉中
+erwa -[#Grey]> centipede : 听到
+note right
+    正在追赶而来
+end note
+
+oldman -[#Grey]> erwa : 询问
+note left: 怎么了?
+
+erwa -[#Grey]> oldman : 回答
+note right: 后面有妖精追来了
+
+pangolin -[#Grey]> oldman : 告诉
+note right
+    老爷爷,你们快躲一躲
+    我有办法对付
+end note
+
+erwa -[#Green]> erwa: 躲藏
+oldman -[#Green]> oldman: 躲藏
+
+'斗智斗勇
+pangolin -[#Grey]> centipede: 引诱
+
+centipede -[#Green]> centipede : 转眼
+centipede -[#Red]> pangolin : 攻击
+note left: 躲闪成功，攻击失败
+
+pangolin -[#Grey]> centipede: 躲藏
+
+centipede -[#Grey]> pangolin: 寻找
+
+pangolin -[#Red]> centipede: 攻击
+note right: 掉入蜘蛛网中
+
+spiderweb -[#Red]> centipede: 收入
+centipede -[#Grey]> spider: 告诉
+note right: 快放开我
+
+spider -[#Green]> spider: 醒来
+spider -[#Grey]> spiderweb: 收网
+spider -[#Grey]> centipede: 告诉
+note left: 又有一个瞎眼的傻瓜送上门来了
+
+centipede -[#Grey]>spider: 告诉
+note right: 你们这些瞎眼的混蛋，快放开我
+
+'顺利逃脱
+pangolin -[#Green]> pangolin: 逃走
+oldman -[#Green]> oldman: 逃走
+erwa -[#Green]> erwa: 逃走
+
+@enduml
+

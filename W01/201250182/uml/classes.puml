@@ -1,0 +1,77 @@
+@startuml
+
+abstract class Being
+abstract class Creature
+class Music
+class CalabashBrothers
+class Monster
+class Human
+
+Being <|-- Creature
+Creature <|-- Human
+Creature <|-- Monster
+Creature <|-- CalabashBrothers
+
+
+enum Skill {
+invulnerable
+}
+
+class Being {
+}
+
+class Creature {
+    int health
+    int defense
+    int attack
+    boolean isHaveWeapon
+    String name
+
+    speakTo()
+    listen()
+    attack()
+    receiveAttack()
+    isDead()
+    dead()
+    move()
+    say()
+    fallDown()
+    loseWeapon()
+    laugh()
+}
+
+class Human {
+    stumble()
+    kickStone()
+}
+
+class Monster {
+    flyAndMove()
+    wantToAttack()
+    appear()
+    waitAndThink()
+    throwStone()
+    afraid()
+    flyAndEscape()
+}
+
+class CalabashBrothers {
+    Skill skill
+    String color
+
+    chooseName()
+    chooseSkill()
+    activateSkill()
+    grabWeapon()
+    kick()
+    throwWeapon()
+    moveBackWard()
+    crushStone()
+}
+
+class Music {
+    start()
+    stop()
+}
+
+@enduml

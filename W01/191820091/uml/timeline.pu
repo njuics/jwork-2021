@@ -1,0 +1,66 @@
+@startuml
+actor 葫芦娃 as cala #Yellow
+actor 蛇精 as snake #Black
+entity 宝剑 as sword #White
+
+cala -> snake: 说
+note left: 哈哈哈哈
+
+snake -> cala: 说
+note right
+难道你不怕
+我的宝剑呐
+end note
+
+cala -> snake: 说
+note left: 我还可以陪你玩玩
+
+snake -> cala: 说
+note right
+只要你抵得住我三剑
+我就还你哥哥
+end note
+
+cala -> snake: 说
+note left: 说话算数
+
+cala -> cala: 从石头上跳下来
+
+cala -> snake: 说
+note left: 来吧
+
+snake -> cala: 说
+note right: 好
+
+cala -> snake: 说
+note left
+哎，慢着，谁要是赖皮
+谁就是小狗
+end note
+
+snake -> cala: 说
+note right: 看剑
+
+sword -> cala: 攻击
+
+sword -> cala:攻击
+
+cala -> snake: 说
+note left
+哈哈，到底还是个女人
+我的头可不是面团捏的
+最后一下了，你可得
+把劲全使出来
+end note
+
+snake -> cala: 说
+note right
+哼，铁娃子，你可别心急
+你还不知道这剑的厉害呢
+好，你等着
+end note
+
+snake -> sword: 操控剑变形
+
+sword -> cala: 将葫芦娃缠住
+@enduml

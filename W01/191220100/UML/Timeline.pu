@@ -1,0 +1,32 @@
+@startuml
+
+actor 六娃 as sixboy
+actor 蛇精 as snake
+actor 蝎子精 as scorpion
+entity 玉如意 as yuruyi
+
+scorpion -> scorpion : 睡觉
+snake -> snake : 睡觉
+sixboy -> yuruyi : 试图拿到
+sixboy -> sixboy : 隐身
+snake -> snake : 醒来
+snake -> snake : 睡着
+scorpion -> scorpion : 舔嘴唇
+sixboy -> sixboy : 现身
+sixboy -> yuruyi : 试图拿到
+scorpion -> scorpion : 哼声
+sixboy -> sixboy : 挠头
+scorpion -> yuruyi : 抓紧
+sixboy -> sixboy : 转了转眼珠
+sixboy -> scorpion : 挠氧，但是失败了
+scorpion -> scorpion : 哼声
+sixboy -> scorpion : 挠氧，但是失败了
+scorpion -> scorpion : 舔嘴唇，挠鼻子
+sixboy -> scorpion : 挠氧，并且成功了
+scorpion -> scorpion : 打喷嚏，松开手
+yuruyi -> yuruyi : 玉如意掉下来
+sixboy -> yuruyi : 拿到
+sixboy -> sixboy : 做出嘲讽动作
+sixboy -> sixboy : 离开
+
+@enduml

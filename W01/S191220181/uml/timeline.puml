@@ -1,0 +1,101 @@
+@startuml
+actor 三娃 as sanwa #yellow
+actor 蛇精 as snake #red
+actor 蝎子精 as scorpion #purple
+actor 青蛙精 as frog #blue
+
+
+sanwa -[#Yellow]> snake:告诉
+note left
+    你到底要打什么地方
+end note
+
+snake -[#Black]> snake:心想
+note right
+    这娃子肯定有弱点
+end note
+
+snake -[#red]> sanwa:告诉
+note right
+    你转过身，让我康康！
+end note
+
+sanwa -[#Yellow]> sanwa:转身并捂住自己的屁股
+
+snake -[#red]> sanwa:哈哈大笑
+
+snake -[#red]> sanwa:告诉
+note right
+    你能挺住我三棍，我就投降
+end note
+
+sanwa -[#Black]> sanwa:心想
+note left
+    我刀枪不入还怕你打棍子
+end note
+
+sanwa -[#Yellow]> snake:告诉
+note left
+    你又不是我妈，真不要脸
+end note
+
+snake -[#red]> sanwa:告诉
+note right
+    今儿老娘非打你不可
+end note
+
+sanwa -[#Yellow]> snake:告诉
+note left
+    谁……谁怕你啦！
+end note
+
+snake -[#red]> sanwa:用棍敲打
+
+sanwa -[#Yellow]> snake:躲开了攻击
+
+snake -[#red]> sanwa:哈哈大笑
+
+snake -[#red]> sanwa:告诉
+note right
+    你躲什么
+end note
+
+sanwa -[#Yellow]> snake:告诉
+note left
+    谁躲了，我抓抓痒不行吗
+end note
+
+snake -[#red]> sanwa:用棍敲打
+
+sanwa -[#Yellow]> snake:躲开了攻击
+
+snake -[#red]> sanwa:哈哈大笑
+
+snake -[#red]> sanwa:告诉
+note right
+    你的弱点被我找到了
+end note
+
+snake -[#red]> sanwa:用技能鞋子束缚
+
+sanwa -[#Yellow]> sanwa:试图逃脱
+
+sanwa -[#Yellow]> sanwa:被困住
+
+snake -[#red]> sanwa:追击三娃
+
+snake -[#red]> sanwa:用棍敲打
+
+snake -[#red]> scorpion:告诉
+note left
+    你们快出来，把他抬走
+end note
+
+frog -[#blue]> sanwa:举起三娃然后离开
+
+snake <[#red]- scorpion:告诉
+note right
+    你真彳亍！
+end note
+
+@enduml

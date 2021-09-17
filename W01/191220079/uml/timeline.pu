@@ -1,0 +1,55 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=6
+' 3:39 ~ 4:36
+
+@startuml
+actor 三娃 as Sanwa #Yellow
+actor 蝎子 as Xiezi #Black
+entity 武器 as Weapon #White
+
+Xiezi -[#Blue]> Xiezi : 大笑
+Sanwa -[#Blue]> Sanwa : 发怒
+Sanwa -[#Red]> Xiezi : 造成伤害
+note left : 火箭头槌
+Sanwa -[#Blue]> Sanwa : 大笑
+
+Xiezi -[#Red]> Sanwa : 用刀攻击
+note left : 被躲掉
+Xiezi -[#Red]> Sanwa : 用刀攻击
+note left : 被躲掉
+Xiezi -[#Red]> Sanwa : 用刀攻击
+note left : 被躲掉
+Xiezi -[#Red]> Sanwa : 用刀攻击
+note left : 被躲掉
+Xiezi -[#Red]> Sanwa : 用刀攻击
+note left : 被躲掉
+
+Sanwa -[#Red]> Weapon : 破坏武器
+Sanwa -[#Red]> Weapon : 破坏武器
+Sanwa -[#Red]> Weapon : 破坏武器
+Sanwa -[#Red]> Weapon : 破坏武器
+Xiezi -[#Blue]> Xiezi : 发怒
+Xiezi -[#Grey]> Weapon : 丢掉武器
+Sanwa -[#Blue]> Sanwa : 大笑
+
+Sanwa -[#Purple]> Xiezi : 告诉
+note left : 来！来吧！
+Xiezi -[#Red]> Sanwa : 用钳子攻击
+note right : 将手变成钳子
+note left : 没有造成伤害
+Sanwa -[#Red]> Weapon : 破坏武器
+Sanwa -[#Blue]> Sanwa : 大笑
+Sanwa -[#Purple]> Xiezi : 告诉
+note left : 再来啊！
+Xiezi -[#Red]> Sanwa : 用钳子攻击
+note right : 将手变成钳子
+note left : 没有造成伤害
+Sanwa -[#Red]> Weapon : 破坏武器
+Xiezi -[#Blue]> Xiezi : 感到疼痛
+Sanwa -[#Blue]> Sanwa : 大笑
+
+Xiezi -[#Blue]> Xiezi : 逃跑
+Sanwa -[#Blue]> Sanwa : 追赶
+Sanwa -[#Purple]> Xiezi : 告诉
+note left : 别想跑！哪里走！
+
+@enduml

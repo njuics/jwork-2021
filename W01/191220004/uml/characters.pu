@@ -1,0 +1,37 @@
+@startuml
+class Being
+class Creature{
+    int HP
+    String name
+    getName()
+    laugh()
+    speakTo()
+    listen()
+    attack()
+    receiveAttack()
+}
+
+class Human{
+    awake()
+    rollEyes()
+    shock()
+}
+
+class Monster{
+    kiss()
+    shout()
+    bePissed()
+}
+
+class Spider{
+    pull()
+}
+
+Creature --|> Being
+
+Spider --|> Creature
+
+Monster --|> Creature
+
+Human --|> Creature
+@enduml

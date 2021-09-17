@@ -1,0 +1,54 @@
+@startuml character
+class Being{
+    int strength
+}
+
+class Creature {
+
+    int health
+    int defense
+
+    say()
+    talkTo()
+    listen()
+    attack()
+    underAttack()
+    beDead()
+    act()
+    see()
+}
+
+class Goblin{
+    int magic
+}
+
+class GourdEssence{
+    int magic
+}
+
+class Chain{
+    beSmashed()
+    trip()
+    twine()
+}
+
+class Hammer{
+    hit()
+}
+
+class Sword{
+    revive()
+}
+Creature --|> Being
+
+
+Goblin --|> Creature
+
+GourdEssence --|> Creature
+
+Chain --|> Being
+
+Hammer --|> Being
+
+Sword --|> Being
+@enduml

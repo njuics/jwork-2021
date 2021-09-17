@@ -1,0 +1,44 @@
+@startuml
+
+class Being
+
+class Creature{
+    int health
+    int attack
+    int defense
+    String[] memory
+
+    speakTo()
+    listen()
+    attack()
+    throwFork()
+    receiveAttack()
+    laugh()
+}
+
+class Fork{
+    status
+    
+    beAttacked()
+    beThrown()
+}
+
+class Monster{
+    rolleyes()
+}
+
+class Hulu{
+   breakFork()
+   beIced()
+}
+
+Creature --|> Being
+
+Hulu --|> Creature
+
+Monster --|> Creature
+
+Fork --|> Being
+
+
+@enduml

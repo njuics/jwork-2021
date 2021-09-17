@@ -1,0 +1,124 @@
+@startuml
+
+class Argument
+
+class Entity{
+    String name
+    EntityType type
+    int attribute
+
+    +Entity()
+    +Name()
+    +Type()
+    +Attribute()
+    +Exert()
+}
+
+class Magic{
+    MagicStatus status
+    +Magic()
+
+    +Status()
+    +StatusTransition()
+    __ @Override __
+    +Exert()
+}
+
+class Weapon{
+    int duribility
+    WeaponStatus status
+
+    +Duribility()
+    +DuribilityChange()
+    +WeaponStatusChange()
+    +Status()
+    __ @Override __
+    +Exert()
+}
+
+class Being{
+    int hp
+    String name
+    BeingStatus status
+
+    +Being()
+
+    +UnitHP()
+    +UnitName()
+    +UnitStatus()
+
+    +SpeakTo()
+    +ReceiveDialog()
+    +BroadCast()
+    +GroupBroadCast()
+
+    +Attack()
+    +ReceiveAttack()
+    +StatusTransition()
+}
+
+class SpecialEntity{
+    Entity entity
+
+    +SpecialEntity()
+    __ @Override __
+    +Attack()
+    +ReceiveAttack()
+    +ReceiveDialog()
+}
+
+class Human{
+    int listlen
+    Entity[] entitylist
+    
+    +Human()
+    +ObtainEntity()
+    +DiscardEntity()
+    +ExertEntity()
+    __ @Override __
+    +Attack()
+    +ReceiveAttack()
+}
+
+class CalaBoy{
+    +CalaBoy()
+    +Brag()
+    __ @Override __
+    +ReceiveAttack()
+}
+
+class Monster{
+    Monster()
+}
+
+class Building{
+    Building()
+
+    __ @Override __
+    ReceiveDialog()
+    ReceiveAttack()
+}
+
+class GlobalVariables{
+    enum BeingStatus
+
+    enum MagicStatus
+
+    enum WeaponStatus
+
+    enum EntityType
+
+    enum GlobalClassType
+}
+
+Entity --|> Argument
+Magic  --|> Entity
+Weapon --|> Entity
+Being  --|> Argument
+SpecialEntity --|> Being
+Human  --|> Being
+Building --|> Being
+CalaBoy --|> Human
+Monster --|> Human
+
+@enduml

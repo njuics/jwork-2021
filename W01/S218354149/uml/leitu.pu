@@ -1,0 +1,41 @@
+@startuml draft2
+Human --|> Creature
+Monster --|> Creature
+
+Creature --|> Being
+Spiderweb --|> Being
+
+
+class Monster { 
+boolean Swordthrown = false
+attack()
+pullString()
+throwSword()
+}
+
+class Creature { 
+int health;
+int attack;
+int defense;
+int XP;
+int level;
+int patience = 10;
+boolean pissed = false;
+String name;
+String[] memory;
+int memoryOffset;
+
+speakTo()
+listen()
+attack()
+receiveAttack()
+isDead()
+move()
+dropXP()
+gainXP()
+emotion()
+}
+
+ 
+Spiderweb : change()
+@enduml

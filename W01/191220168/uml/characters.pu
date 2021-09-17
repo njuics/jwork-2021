@@ -1,0 +1,24 @@
+@startuml characters
+class Character{
+#String name
+#int hp
+#int attackpower
++attack()
++hurt()
++miss()
++tell()
++hear()
+}
+class Weapon{
+#String name
+#int damage
+}
+class Rope{
++tie()
+}
+class Shoe{
++smaller()
+}
+Rope --|> Weapon
+Shoe --|> Weapon
+@enduml

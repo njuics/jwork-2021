@@ -1,0 +1,38 @@
+@startuml
+class Being
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+
+    speakTo()
+    listen()
+    attack()
+    receiveAttack()
+    receiveRock()
+}
+
+class Monster{
+    int magic
+}
+
+class RockMonster{
+    int eatRockLimit
+    void eat_rock()
+}
+
+class CalabashBrother{
+}
+
+class Rock{
+    int weight
+}
+
+Creature --|> Being
+Rock --|> Being
+Monster --|> Creature
+RockerMosnster --|>Monster
+CalabashBrother --|>Creature
+@enduml

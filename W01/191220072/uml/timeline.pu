@@ -1,0 +1,99 @@
+'https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3'
+'4:45 - 6:30'
+@startuml
+actor       Bigbro   as bigbro 
+actor       Snake    as snake  #Black 
+actor       Scorpion    as scorpion   #Purple 
+actor       Centipede   as centipede  #Red
+
+'bigbro -> snake: speak
+note over bigbro
+    Speak:
+    Fairy, return my grandpa to me!
+end note
+
+snake -> snake : pondering 2 seconds
+
+'snake -> bigbro : speak
+note over snake
+    Speak:
+    Ok, Ok. You are very filial. 
+    Your grandpa is here. 
+    Your mother is here,too. Kowtow to me!
+endnote
+
+'bigbro -> snake: speak
+note over bigbro
+    Speak:
+    Pooh!Shame on you!
+end note
+
+note over scorpion
+    Speak:
+    Hahahahahaha!
+end note
+
+note over bigbro
+    Speak:
+    If you don't let my grandpa go today, 
+    I will smash your home!
+end note
+    
+note over scorpion
+    Speak:
+    On? Hahahaha!
+end note
+
+scorpion -> scorpion : I armed my spear!
+note right
+    Attack Increased!
+end note
+
+
+scorpion -> bigbro : Attack! 
+
+scorpion -> scorpion : My spear is unavilable!
+note right
+    Attack Declined!
+end note
+
+snake -> bigbro : Magic! !
+note right 
+    wield magic !
+    Damage 50 points!
+end note
+
+centipede -> bigbro : Attack! 
+note left: Missed
+
+
+centipede -> bigbro : Attack !
+note left: Missed
+
+bigbro -> centipede : Attack !
+note right: Got 200 points attack
+
+centipede -> centipede : transform
+note right: Grow Bigger
+
+bigbro -> bigbro: Become MegaBigBro!
+note left: Become Stronger!
+
+bigbro -> centipede : Attack!
+note right:Got 400 points attack
+
+centipede -> centipede: Am I Dead?
+note right : Yes!
+
+bigbro -> bigbro :Become Normal
+
+
+
+
+
+
+
+
+
+
+@enduml

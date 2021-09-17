@@ -1,0 +1,67 @@
+@startuml
+actor scorpion #Navy
+actor snack #yellow
+actor FireBrother #red
+actor WaterBrother #blue
+entity cup_one 
+entity cup_two 
+actor bees #Gold
+actor bats #Black
+entity stone #Gray
+bees -[#Aqua]> cup_one : 装满水
+bees -[#Aqua]> cup_two : 装满水
+
+snack -[#Lime]>snack : 微笑
+note right:哈哈哈
+
+snack -[#Gray]>FireBrother : 告诉
+note right:请，请喝。
+
+scorpion -[#Lime]>scorpion : 微笑
+note right:哈哈哈
+
+scorpion -[#Gray]>FireBrother : 告诉
+note right:来，干！
+
+FireBrother -[#Gray]> scorpion:告诉
+note right:这酒倒是非常香，就是太冷了一点。
+
+FireBrother -[#Coral]> FireBrother:转眼珠
+
+FireBrother -[#Gray]> scorpion:告诉
+note right:这洞也是又冷又暗。
+
+WaterBrother -[#Gray]> scorpion:告诉
+note right:坐在这冷板凳上，屁股都发凉。
+
+FireBrother -[#Coral]> FireBrother:转眼珠
+
+scorpion -[#Gray]> bats:告诉
+note left:对对对，来啊，快掌\n灯生火，共庆佳宴
+
+FireBrother -[#Orchid]> FireBrother:站起来
+
+FireBrother -[#Gray]> scorpion:告诉
+note right:慢！用不着费那力气，看我的。
+
+FireBrother -> stone:喷火
+note left:石头被点着
+
+FireBrother -> bats:造成伤害
+bats -> bats:四处逃窜
+
+FireBrother -[#Coral]> FireBrother:转眼珠
+
+FireBrother -> cup_one:喷火
+note left:温酒
+
+snack -[#Lime]> snack:震惊
+note right:啊？
+
+scorpion -[#Lime]> scorpion:震惊
+note right:啊？
+
+FireBrother -[#Aqua]> cup_one:一饮而尽
+note left:酒杯空了
+
+@enduml

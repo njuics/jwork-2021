@@ -1,0 +1,42 @@
+@startuml first_homework
+enum forms
+enum weapons
+enum antweapons
+class Creature {
+    String name
+    int HP
+    int attack_value
+    int defense
+    int agile
+    emotions emotion
+    talkto()
+    shout()
+    hit()
+    gethurt()
+    change_emotion()
+    idDead()
+    runaway()
+}
+class Human{
+    destroy_weapon()
+}
+class Antman{
+    antweapons weapon
+    change_weapon()
+}
+class Xiezijing{
+    forms form
+    weapons weapon
+    change_weapon()
+    change_form()
+    weapon_broken()
+    take_off_pants()
+}
+
+Human --|> Creature
+
+Antman --|> Creature
+
+Xiezijing --|> Creature
+
+@enduml

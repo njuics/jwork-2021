@@ -1,0 +1,64 @@
+@startuml
+abstract class being
+{
+    String name
+    String getName()
+    void setName
+}
+abstract class Creature
+{
+    int hp
+    int aggressivity
+    int defense
+
+    void speakTo()
+    String listen()
+    void attackTo()
+    int beAttacked()
+    void bePissed()
+    void rollEyes()
+    void run()
+    void stop()
+    boolean isDead()
+    void laugh()
+    void think()
+}
+class Rock
+{
+    int aggressivity
+    int attack()
+}
+class Magic
+{
+    String name
+    int attackAdd
+
+    int useMagic()
+}
+class Monster
+{
+    HashMap<String, Magic> myMagics
+
+    int useMagic()
+}
+class HuLuWa
+{
+    HashMap<String, Magic> myMagics
+
+    void transferToHulu()
+    void transferToWa()
+    void jump()
+}
+class NormalCreature
+{
+
+}
+
+Creature --|> being
+Rock --|> being
+NormalCreature --|> Creature
+Monster --|> Creature
+HuLuWa --|> Creature
+Magic --o HuLuWa
+Magic --o Monster
+@enduml

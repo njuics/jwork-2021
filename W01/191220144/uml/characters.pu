@@ -1,0 +1,66 @@
+@startuml Characters
+class Being {
+    String name
+}
+class Creature {
+    int hp
+    int atk
+    String[] memory
+    int memptr
+    speakTo()
+    listen()
+    attack()
+    shout()
+    hurt()
+    isDead()
+}
+class Stalactite{
+    dropWater()
+}
+class Vat{
+    receiveWater()
+}
+class Stone{
+    int atk
+    Collide()
+}
+class StoneGate{
+    int state
+    changeState()
+}
+class Monster{
+    int mp 
+    mad()
+}
+class Snake{
+    throwOut()
+    flashEyes()
+}
+class Scorpion
+class Gourd{
+    int state
+    receiveWater()
+    swing()
+    getRid()
+    jump()
+    bomb()
+}
+class CalaBro{
+    int state
+    stealth()
+    appear()
+    run()
+}
+Creature --|> Being
+Vat --|> Being
+Stalactite --|> Being
+Stone --|> Being
+StoneGate --|> Being
+Gourd --|> Creature
+CalaBro --|> Creature
+Monster --|> Creature
+Snake --|> Monster
+Scorpion --|>Monster
+
+
+@enduml

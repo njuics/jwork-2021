@@ -1,0 +1,119 @@
+@startuml timeline
+scale 1
+skinparam sequenceMessageAlign center
+actor 爷爷 as human1 #Gainsboro
+entity 紫葫芦 as en1 #730f8c
+actor 蛇精 as bogy1 #e6dc78
+actor 蝎子精 as bogy2 #MediumPurple
+en1 -[#be46c8]/ en1: 闪闪发光
+
+par #be46c8
+    en1 -[#Green]> bogy1: 告诉
+    en1 -[#Green]> bogy2: 告诉
+    note over en1, bogy2
+        妈妈，爸爸。。。我在哪？
+    end note
+end
+
+create actor 七娃 as human2 #730f8c
+en1 -[#be46c8]> human2: 放出七娃
+en1 -[#be46c8]/ en1: 闪闪发光
+
+human2 -[#Green]> bogy1: 告诉
+note right: 妈妈!
+
+bogy1 <-[#Gray]> human2: 拥抱
+bogy1 -[#Green]> human2: 告诉
+note left: 诶，乖孩子
+
+bogy2 -[#MediumPurple]/ bogy2: 大笑
+note left: 哈哈哈哈
+
+human2 -[#Green]> bogy1: 告诉
+note right: 妈~妈~
+
+bogy1 -[#Green]> human2: 告诉
+note left: 好宝贝儿
+bogy1 -[#e6dc78]> human2: 亲吻
+
+||40||
+
+human1 -[#Green]> human2: 告诉
+note left
+    孩子啊，你糊涂了，
+    怎么跟妖怪打得火热啊，嗯？
+end note
+
+bogy1 -[#Green]> human2: 告诉
+note left
+    乖孩子，
+    你看看这老头儿，
+    你认得他吗？
+end note
+
+human2 -[#730f8c]/ human2: 移动
+hnote right #LightGray: 走到爷爷跟前
+
+human2 -[#Green]> bogy1: 告诉
+note right: 从来没有见过
+
+human1 -[#Green]> human2: 告诉
+note left
+    孩子，我是你爷爷啊
+end note
+
+human2 -[#Green]> human1: 告诉
+note right:你胡说，真不害羞
+
+human1 -[#Gray]/ human1: 伤心欲哭
+
+human2 -[#730f8c]/ human2: 移动
+hnote right #LightGray: 走到蛇精跟前
+
+human2 -[#Green]> bogy1: 告诉
+note right: 妈妈，我是你的好宝贝儿
+
+bogy1 -[#Green]> human2: 告诉
+note left: oh~ 真是个乖孩子
+
+bogy1 -[#e6dc78]/ bogy1: 大笑
+note left: 呵呵呵呵
+
+bogy2 -[#MediumPurple]/ bogy2: 大笑
+note left: 哈哈哈哈
+
+human1 -[#Gray]/ human1: 哭泣
+
+||40||
+
+bogy1 -[#Green]> human2: 告诉
+note left
+    孩子，这个老头儿带了一帮蛮小子
+    在这里捣乱，你说该怎么办呢，啊？
+end note
+
+human2 -[#730f8c]/ human2: 转眼睛
+hnote right #LightGray:思考......
+
+human2 -[#Green]> bogy1: 告诉
+note right
+    妈，这宝贝可神了，威力无穷。
+    我用它来收拾这帮蛮小子，给
+    爸爸妈妈出气
+end note
+
+en1 -[#be46c8]/ en1: 闪闪发光
+
+bogy1 -[#Green]> human2: 告诉
+note left: oh，太好了，好宝贝儿
+
+bogy2 -[#Green]> human2: 告诉
+note left: 好！
+
+bogy1 -[#e6dc78]/ bogy1: 大笑
+note left: 啊哈哈哈哈
+
+bogy2 -[#MediumPurple]/ bogy2: 大笑
+note left: 哈哈哈哈
+
+@enduml

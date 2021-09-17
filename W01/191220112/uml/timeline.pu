@@ -1,0 +1,103 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=13
+' 3:05 ~ 4:12
+
+@startuml timeline
+actor       老头    as oldman
+actor       蛇精    as snake    #Black 
+actor       蝎子精  as scorpion #Purple 
+actor       小喽啰们    as minion   #Blue
+entity      七心宝连    as baolian  #SkyBlue
+
+oldman -[#Blue]> oldman : 大笑
+note left:  哈哈哈哈哈...
+
+scorpion -[#Grey]> oldman : 告诉
+note right
+    老家伙，我把你
+    也扔到炉里去，
+    叫你知道厉害！！
+end note
+
+oldman -[#Grey]> scorpion : 告诉
+note left
+    就是把我烧成灰，
+    也别想炼出七心丹！
+    这七个葫芦娃，
+    全给你们折腾得
+    离心离德，怎么
+    能合到一块去呢！
+end note
+
+snake -[#Blue]> snake : 惊讶
+note left: 啊？？
+
+snake -[#Blue]> snake : 眨眼
+
+snake -[#Blue]> snake : 转眼珠
+
+scorpion -[#Blue]> scorpion : 眨眼
+
+oldman -[#Grey]> snake : 告诉
+note left
+    我倒是有办法叫
+    他们回心转意。
+end note
+
+scorpion -[#Grey]> oldman : 告诉
+note right: 你？？
+
+snake -[#Grey]> minion : 告诉
+note left
+    把老头儿放开，看看
+    他有多大的能耐！
+end note
+
+minion -[#Blue]> oldman : 解开
+
+oldman -[#Blue]> oldman : 舒展手臂
+
+snake -[#Blue]> snake : 眨眼
+
+scorpion -[#Blue]> scorpion : 眨眼
+
+oldman -[#Blue]> oldman : 舒展手臂
+
+oldman -[#Green]> oldman : 掏东西
+
+scorpion -[#Blue]> scorpion : 眨眼
+
+oldman -[#Green]> baolian : 掏出
+
+oldman -[#Grey]> snake: 告诉
+note left
+    莲心莲心，连成一心!
+    葫芦娃有了它，就能
+    齐心合力，消灭你们
+    这些妖精。
+end note
+
+baolian -[#Blue]> baolian : 发光
+
+oldman -[#Blue]> oldman : 大笑
+note left: 哈哈哈哈...
+
+snake -[#Grey]> scorpion : 告诉
+note left
+    不好，我们上当啦！
+end note
+
+scorpion -[#Blue]> scorpion : 生气
+note right: 哇呀呀呀...
+
+minion -[#Blue]> minion : 害怕
+note left: 啊...
+
+oldman -[#Green]> baolian : 抛出
+note left: 嘿！
+
+oldman -[#Blue]> oldman : 大笑
+note left: 哈哈哈哈...
+
+baolian -[#Blue]> baolian : 打开
+
+@enduml

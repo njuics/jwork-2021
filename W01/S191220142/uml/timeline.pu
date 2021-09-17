@@ -1,0 +1,147 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=6
+' 7:37 ~ 9:30
+
+@startuml
+actor       三娃   as sanwa #Orange
+actor       蛇精    as snake  #Black
+actor       蝎子精    as scorpion   #Purple
+entity      刚柔阴阳剑  as sword #White
+
+sanwa -[#Grey]> snake : 告诉
+note left
+    你有什么本事,
+    哎，就拿出来吧
+end note
+
+snake -[#Grey]> sanwa : 告诉
+note right: 好
+
+snake -[#DarkGoldenRod]-> sword : 使用
+
+snake -[#Blue]> snake : 大喊
+note right: 啊啊啊
+
+sanwa -[#Green]> sanwa : 大笑
+note left: 哈哈哈
+
+snake -[#Grey]> sanwa : 告诉
+note right: 啊？你难道不怕我这宝剑吗？
+
+sanwa -[#Grey]> snake : 告诉
+note left
+    你干脆把所有的兵器都拿出来吧，
+    我还可以陪你玩玩~
+end note
+
+snake -[#Grey]> sanwa : 告诉
+note right
+    只要你顶得住我三剑，
+    我就缴械投降，
+    还你哥哥
+end note
+
+sanwa -[#Grey]> snake : 告诉
+note left: 好，说话算数
+
+sanwa -[#Green]> sanwa : 跳下
+
+sanwa -[#Green]> sanwa : 变坚硬
+
+sanwa -[#Grey]> snake : 告诉
+note left: 欸，来吧
+
+snake -[#Grey]> sanwa : 告诉
+note right: 好！
+
+sanwa -[#Grey]> snake : 告诉
+note left
+    欸，慢着，
+    谁要是赖皮，
+    谁就是孬种
+endnote
+
+snake -[#Grey]> sanwa : 告诉
+note right: 看剑
+
+snake -[#Red]> sanwa : 攻击
+note right
+挥剑，
+未造成伤害
+endnote
+
+sanwa -[#Grey]> snake : 告诉
+note left: 一
+
+snake -[#Blue]> snake : 大喊
+note right: 欸~嗨！
+
+snake -[#Red]> sanwa : 再次攻击
+note right
+挥剑，
+未造成伤害
+endnote
+
+sanwa -[#Grey]> snake : 告诉
+note left: 二
+
+scorpion -[#Purple]> scorpion : 震惊
+note right: 啊？！
+
+sanwa -[#Green]> sanwa : 大笑
+note left: 哈哈！
+
+sanwa -[#Grey]> snake : 告诉
+note left
+    到底是个女人，
+    我的头可不是面团捏的,
+    最后一下了，
+    你可得把劲全使出来啊~
+endnote
+
+snake -[#Grey]> sanwa : 告诉
+note right
+    哼，铁娃子，
+    可别心急啊，
+    你还不知道这刚柔阴阳剑的厉害呢
+endnote
+
+snake -[#Grey]> sanwa : 告诉
+note right
+    好，你等着
+endnote
+
+snake -[#Blue]> snake : 跳舞
+note right: 音乐伴奏
+
+snake -[#Blue]> snake : 大笑
+note right: 哈哈哈哈哈~
+
+snake -[#DarkGoldenRod]-> sword : 丢弃
+note left
+对三娃
+使用
+endnote
+
+sanwa -[#Green]> sanwa : 大喊
+note left: 诶呀！欸！
+
+snake -[#Blue]> snake : 大笑
+note right: 啊哈哈哈哈哈~
+
+scorpion -[#Purple]> scorpion : 大笑
+note right: 嚯哈哈哈哈哈~
+
+snake -[#Grey]> sanwa : 告诉
+note right
+    铁娃子，
+    女人的软刀子滋味怎么样啊？
+    嗯？
+endnote
+
+snake -[#Blue]> snake : 大笑
+note right: 哈哈哈哈哈~
+
+sanwa -[#green]> sanwa : 大喊
+note left: 欸啊~
+
+@enduml

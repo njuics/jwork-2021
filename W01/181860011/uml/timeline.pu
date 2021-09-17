@@ -1,0 +1,116 @@
+@startuml
+
+entity 宝石 as gemStone #Grey
+actor 葫芦娃 as calabashBoy #LightSalmon
+actor 小蝴蝶 as butterfly #Pink
+actor 蝙蝠精 as bat #LightBlue
+actor 蛇精 as snake #RoyalBlue
+entity 莲花座 as lotus 
+entity 树叶门 as leaf #Green
+
+note over gemStone #LightGrey :在葫芦娃脖子上
+/ note over lotus #LightGrey :莲座里有四杯酒 
+/ note over leaf #LightGrey :关闭
+
+butterfly -[#Grey]> calabashBoy:talk 
+note over calabashBoy,butterfly #Pink
+    这是百草的甘露，天地间的精华。
+    它是花中的琼浆，喝了它，
+    幽香缭绕，如仙如梦，如痴如醉。
+end note
+
+butterfly -[#Darkorange]> lotus:grab a flowerWine
+note over lotus #LightGrey :莲座里有三杯酒 
+
+butterfly -[#Grey]> calabashBoy:talk
+note over calabashBoy,butterfly #Pink
+    一切烦恼，都会消失的。
+end note
+
+butterfly -[#Darkorange]> calabashBoy:give flowerWine
+
+calabashBoy -[#Green]> calabashBoy:drink flowerWine
+
+calabashBoy -[#Grey]> butterfly:talk
+note over calabashBoy,butterfly #LightSalmon
+    哎，好喝，好喝。
+end note
+
+calabashBoy -[#Green]> calabashBoy:lose flowerWine(empty)
+
+calabashBoy -[#Darkorange]> lotus:drink from lotus 
+
+butterfly -[#Grey]> calabashBoy:talk
+note over calabashBoy,butterfly #Pink
+    啊，小哥哥，你可不能多喝啊。
+end note
+
+calabashBoy -[#Grey]> butterfly:talk
+note over calabashBoy,butterfly #LightSalmon
+    好喝，好，好喝，嗯...
+end note
+
+calabashBoy -[#Green]> calabashBoy:getDrunk
+
+calabashBoy -[#Green]> calabashBoy:eyeGlow
+
+calabashBoy -[#Green]> calabashBoy:drunkTalk
+note left #LightSalmon
+    咦哟，哎哟，好喝，好喝...
+    嗯好，好，好，好，啊嗯...
+end note
+
+calabashBoy -[#Green]> calabashBoy:blackout
+
+butterfly -[#Green]> butterfly:lieDown
+
+butterfly -[#Grey]> calabashBoy:talk
+note over calabashBoy,butterfly #Pink
+    小哥哥，小哥哥，你快醒醒啊。
+end note
+
+bat -[#Darkorange]> leaf:push
+
+leaf -[#Green]> leaf:open
+
+bat -[#Green]> bat:laugh
+
+bat -[#Green]> bat:fly
+
+bat -[#Grey]> bat:talk
+note over bat #LightBlue
+    太好了，太好了，嘿嘿。
+end note
+
+bat -[#Grey]> butterfly:talk
+note over bat,butterfly #LightBlue
+    好你个小妖精，
+    磨磨蹭蹭尽想着这个蛮小子，
+    哼，会有你好日子的。
+end note
+
+bat -[#Darkorange]> butterfly:attack
+
+bat -[#Darkorange]> gemStone:stealGemStone
+
+calabashBoy -[#Green]> calabashBoy:lose gemStone
+
+bat -[#Grey]> bat:talk
+note over bat #LightBlue
+    啊，宝贝。
+end note
+
+gemStone -[#Green]> gemStone:shine
+
+bat -[#Darkorange]> snake:give genStone
+
+snake -[#Green]> snake:laugh
+
+snake -[#Grey]> snake:talk
+note over snake #RoyalBlue
+    这个金刚葫芦娃这下可完蛋了。
+end note
+
+gemStone -[#Green]> gemStone:shine
+
+@enduml

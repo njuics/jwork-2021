@@ -1,0 +1,53 @@
+@startuml
+
+class Item {
+    String name
+    String getName()
+}
+
+class Creature{
+}
+
+class Goblin{
+    void sleep()
+    void beSleeping()
+    void awake()
+}
+
+class Scorpion{
+    int tickle_time
+    void lickLips()
+    void humph()
+    void sneeze()
+    void scratchNose()
+    void leaveHold()
+    void hold()
+    boolean beTickled()
+}
+
+class Snake {
+}
+
+class StealthBoy{
+    void stealth()
+    void showUp()
+    void tryCatch()
+    void thinking()
+    void get()
+    void scratchHead()
+    void ridicule()
+    void leave()
+    void tickle()
+}
+
+Creature --|> Item
+
+Goblin --|> Creature
+
+Scorpion --|> Goblin
+
+Snake --|> Goblin
+
+StealthBoy --|> Creature
+
+@enduml

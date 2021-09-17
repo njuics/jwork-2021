@@ -1,0 +1,63 @@
+@startuml draft2
+actor 葫芦娃 as huluwa #Red
+actor 蛇精 as snake #purple 
+actor 蝎子精 as scorpion #black 
+entity 小蜘蛛 as spiders #yellow
+entity 蛛网 as spiderweb #White
+
+spiderweb -> spiderweb : 变变变
+
+scorpion -> scorpion : 沾沾自喜
+note right
+啊哈哈！嘿嘿嘿～
+end note
+
+snake -> huluwa : 告诉
+note left
+喂～葫芦娃～
+怎么样啊？
+做了个好梦吧？
+我告诉你，你的丹田已经被我封住了！
+你就别想再撒野了！
+end note
+
+spiders -> spiders : 辛苦地拉网
+
+snake -> huluwa : 劝告
+note right
+啊！我真不想杀掉你...
+你又嫩又蛮又可爱，真讨人喜欢！
+你只要愿意呀…
+mua~mua~~
+你就做我的娃子吧！
+end note
+
+scorpion -> huluwa: 沾沾自喜
+note left
+哼哈哈哈哈哈哈哈！
+end note
+
+huluwa -> snake & scorpion : 吐泥巴
+note right 
+哈呸！
+end note
+
+huluwa -> huluwa: 
+note left
+哈哈哈哈哈哈哈哈！
+end note
+
+
+snake -> huluwa : 惹怒
+note right 
+啊啊啊啊啊嗷！
+end note
+
+scorpion -> huluwa: 惹怒
+note right
+哈？啊！啊啊啊啊啊！
+end note
+
+scorpion -> huluwa : 扔剑
+scorpion -> huluwa : 攻击
+@enduml

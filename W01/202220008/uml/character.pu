@@ -1,0 +1,49 @@
+@startuml
+
+class Being
+
+class Creature {
+	int health
+	int attack
+	int defense
+	int mood
+	String[] memory
+
+	speakTo()
+	listen()
+	attack()
+	receiveAttack()
+	reaction()
+	recall()
+	isDead()
+	move()
+	bePissed()
+	beHappy()
+	setMood()
+}
+
+class Monster {
+	int magic
+	int magicCost
+
+	laugh()
+	rolleyes()
+	override attack()
+	override reaction()
+}
+
+class Human {
+	override reaction()
+}
+
+class Hulu {
+	override reaction()
+}
+
+Creature --|> Being
+
+Human --|> Creature
+Monster --|> Creature
+Hulu --|> Creature
+
+@enduml

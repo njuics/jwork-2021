@@ -1,0 +1,70 @@
+@startuml
+actor batOne #red
+actor batTwo #red
+actor yellowBaby #yellow
+actor grandFather #gray
+database music
+
+batOne-[#green]>batOne: appear
+batTwo-[#green]>batTwo: appear
+yellowBaby->batOne: 告诉
+note right: 来吧！
+yellowBaby->batTwo: 告诉
+note right: 来吧！
+batOne-[#green]>batOne: wait and think.
+batTwo-[#green]>batTwo: wait and think.
+
+batOne->yellowBaby: 告诉
+note left: 你们跑不了啦！
+batOne->grandFather: 告诉
+note left: 你们跑不了啦！
+batTwo->batTwo: 大喊
+note right: 啊啊啊啊啊啊啊啊...
+yellowBaby->yellowBaby: 大喊
+note left: 嗨呀呀呀呀呀呀呀呀呀呀
+
+music-[#blue]>music: start
+yellowBaby-[#green]>yellowBaby: move
+yellowBaby-[#black]>batOne: 攻击
+yellowBaby-[#black]>batOne: 攻击
+yellowBaby-[#black]>batOne: 攻击
+
+batTwo-[#green]>batTwo: move
+batTwo-[#black]>yellowBaby: 想要偷袭
+grandFather->yellowBaby: 告诉
+note right: 当心！
+grandFather-[#black]>batTwo: 踢石头
+batTwo-[#green]>batTwo: 绊倒
+
+yellowBaby-[#black]>batOne: 抢夺武器
+yellowBaby-[#black]>batOne: 踢飞
+yellowBaby-[#green]>yellowBaby: 大笑
+
+batTwo-[#green]>batTwo: 飞上前去
+yellowBaby-[#black]>batTwo: 攻击
+batTwo-[#black]>yellowBaby: 攻击
+yellowBaby-[#black]>batTwo: 攻击
+batTwo-[#black]>yellowBaby: 攻击
+
+yellowBaby-[#green]>yellowBaby: 向后退
+yellowBaby-[#green]>yellowBaby: 摔倒
+yellowBaby-[#black]>yellowBaby: 丢失武器
+batTwo-[#green]>batTwo: 大笑
+
+batOne-[#black]>yellowBaby: 丢石头砸
+grandFather->grandFather: say
+note right: 坏了！
+yellowBaby-[#black]>batOne: 击碎石头
+yellowBaby-[#green]>yellowBaby: 大笑
+
+yellowBaby-[#green]>yellowBaby: 发动技能
+note right: 金刚不坏之身
+batTwo-[#black]>yellowBaby: 攻击
+yellowBaby-[#black]>batTwo: 抢夺武器
+yellowBaby-[#black]>batOne: 投掷武器
+
+batTwo-[#green]>batTwo: 死亡
+batOne-[#blue]>batOne: 感到害怕
+batOne-[#green]>batOne: 飞走逃跑
+music-[#blue]>music: stop
+@enduml

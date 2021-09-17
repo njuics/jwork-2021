@@ -1,0 +1,134 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=8
+' 2:13 ~ 3:14
+
+@startuml
+entity	洞穴	as Cave #black
+entity	酒杯	as Cup #gray
+actor	众妖怪	as CommonMonster #yellow
+actor	火娃	as HuoWa #red
+actor	水娃	as ShuiWa #blue
+actor	蝎子精	as ScorpionEssence #white
+actor	蛇精	as SnakeEssence #green
+
+Cave -[#gray]> Cave : 阴暗潮湿
+
+CommonMonster -[#gray]> CommonMonster : 埋伏于山洞
+
+SnakeEssence -> HuoWa : 告诉
+note right
+	请喝
+end note
+SnakeEssence -> ShuiWa : 告诉
+note right
+	请喝
+end note
+
+ScorpionEssence -> HuoWa : 告诉
+note right
+	呵呵呵，
+	来来，
+	咋们干
+end note
+ScorpionEssence ->ShuiWa : 告诉
+note right
+	呵呵呵，
+	来来，
+	咋们干
+end note
+
+HuoWa ->ScorpionEssence : 慢慢地说
+note left
+	这就倒是非常香，
+	可惜太冷了一点，
+	这洞...
+end note
+HuoWa -> SnakeEssence : 慢慢地说
+note left
+	这就倒是非常香，
+	可惜太冷了一点，
+	这洞...
+end note
+
+ShuiWa -> ScorpionEssence : 接话道
+note left
+	也是又冷又暗，
+	坐在这冷板凳上，
+	屁股都发亮
+end note
+ShuiWa -> SnakeEssence : 接话道
+note left
+	也是又冷又暗，
+	坐在这冷板凳上，
+	屁股都发亮
+end note
+
+HuoWa -[#blue]> HuoWa : 转了转眼睛
+
+HuoWa -[#green]> CommonMonster : 发现埋伏
+
+ScorpionEssence -> HuoWa : 告诉
+note right
+	对对对
+end note
+ScorpionEssence -> ShuiWa : 告诉
+note right
+	对对对
+end note
+
+ScorpionEssence -> CommonMonster : 下令道
+note right
+	 来啊，
+	快掌灯生火，
+	共庆佳宴
+end note
+
+HuoWa -> ScorpionEssence : 告诉
+note right
+	慢，
+	用不着费那么大力气，
+	看我的
+end note
+
+HuoWa -[#red]> Cave : 喷射火焰
+
+Cave -[#gray]> Cave : 明亮暖和
+
+HuoWa -[#red]> CommonMonster : 喷射火焰
+
+CommonMonster -> CommonMonster : 四散奔逃
+
+HuoWa -[#blue]> HuoWa : 转了转眼睛
+
+HuoWa -[#green]> CommonMonster : 发现其四散奔逃
+
+HuoWa -[#red]> Cup : 喷射火焰
+
+Cup -[#gray]> Cup : 酒水沸腾起来
+
+ScorpionEssence -[#gray]> ScorpionEssence : “啊”了一声
+
+SnakeEssence -[#gray]> SnakeEssence : 大吃一惊
+
+SnakeEssence -> HuoWa : 谄媚
+note right
+	二位兄弟大驾光临，
+	为洞府增辉啊
+end note
+SnakeEssence -> ShuiWa : 谄媚
+note right
+	二位兄弟大驾光临，
+	为洞府增辉啊
+end note
+
+ScorpionEssence -> HuoWa : 害怕道
+note right
+	你们真是神通广大，
+	佩服佩服
+end note
+ScorpionEssence -> ShuiWa : 害怕道
+note right
+	你们真是神通广大，
+	佩服佩服
+end note
+
+@enduml

@@ -1,0 +1,101 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=6
+' 3:40-4:34
+
+@startuml
+actor       三娃   as Cucumis 
+actor       蝎子精    as Monster   #Purple 
+entity      宝剑  as Sword #Black
+
+Cucumis -> Cucumis:发怒
+
+Cucumis -> Monster:撞击
+
+Monster -> Monster:摔倒
+
+Monster -> Monster:发怒
+
+Monster ->Sword:拿起
+
+Monster -> Cucumis:攻击
+
+Cucumis -> Cucumis:闪避
+
+Monster -> Cucumis:攻击
+
+Cucumis -> Cucumis:闪避
+
+Monster -> Cucumis:攻击
+
+Cucumis -> Cucumis:闪避
+
+Cucumis -> Sword:攻击
+
+Sword -> Sword:耐久降低
+note right
+宝剑被三娃劈成了三截!耐久降低!
+end note
+
+Monster -> Monster:发怒
+note right
+"啊呀呀呀呀呀呀!"
+end note
+
+Cucumis -> Cucumis:强化
+note right
+三娃使用魔法强化了自身!力量增加!
+end note
+Cucumis -> Sword:攻击
+
+Sword -> Sword:耐久降低
+note right
+宝剑的中央被三娃戳出了一个窟窿!宝剑损坏了!
+end note
+
+Monster -> Monster:惊恐
+
+Cucumis -> Cucumis:大笑
+
+Monster ->Monster:发怒
+
+Monster -> Sword:丢掉
+
+Monster ->Monster:使用魔法
+
+note right
+蝎子精使用魔法强化了自己!右手变为钳子!
+end note
+
+Cucumis ->Cucumis:不屑
+note right
+"来吧!"
+end note
+
+Monster ->Cucumis:攻击
+
+note right
+攻击无效!
+end note
+
+Cucumis -> Cucumis: 大笑
+Monster -> Monster:发怒
+Monster ->Monster:使用魔法
+
+note right
+蝎子精再次强化，又召唤出了力量更大的钳子!
+end note
+
+Cucumis ->Cucumis:不屑
+note right
+"再来啊!"
+end note
+
+Monster ->Cucumis:攻击
+
+note right
+攻击无效!
+end note
+
+Monster ->Monster:惊恐
+Monster ->Monster:逃跑
+@enduml
+

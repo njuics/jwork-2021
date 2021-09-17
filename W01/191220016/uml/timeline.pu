@@ -1,0 +1,75 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=19
+' 2:38 ~ 4:00
+
+@startuml
+actor       葫芦小金刚   as CalabashBrother
+actor       黑吃黑    as RockMonster  #Black 
+actor       小岩石 as Rock1 #Grey
+actor       大岩石 as Rock2 #Grey
+
+
+RockMonster   -[#Grey]> CalabashBrother : 大笑
+note left
+    嘿嘿嘿嘿嘿嘿嘿嘿嘿！
+end note
+
+RockMonster   -[#Grey]> CalabashBrother : 告诉
+note left
+    你是哪里来的小毛孩子，
+    胆子可不小啊，
+    你竟敢闯到这里来找死！
+end note
+
+CalabashBrother   -[#Grey]> RockMonster : 告诉
+note right
+    呔！你是什么妖魔鬼怪，快报上名来！
+end note
+
+RockMonster   -[#Grey]> CalabashBrother : 告诉
+note left
+    你口气可真大，你知道我是谁吗？
+    我可是有眼睛有嘴巴有鼻子，
+    我的名字是黑吃黑！
+end note
+
+CalabashBrother   -[#Grey]> RockMonster : 告诉
+note right
+    什么黑吃黑白吃白的，有本事快亮出来！
+end note
+
+RockMonster   -[#Black]> Rock1 : 使用黑雾龙卷
+
+RockMonster   -[#Blue]> Rock1 : 吃下
+RockMonster   -[#Green]> RockMonster : 攻击上升
+
+RockMonster   -[#Grey]> CalabashBrother : 告诉
+note left
+    我这里不管是石头是人肉是人心是人肺还是狼心狗肺，
+    只要熏黑了吃，可好吃了，
+    哈哈哈哈哈哈哈哈哈！
+    我成年累月光吃石头真吃腻了，
+    今天你送上门来，正好换换口味！
+    哈哈哈哈哈哈哈哈哈！
+end note
+
+RockMonster   -[#Black]> CalabashBrother : 使用黑雾，造成伤害
+
+CalabashBrother   -[#Red]> RockMonster : 使用喷火，造成伤害
+
+RockMonster   -[#Grey]> CalabashBrother : 告诉
+note left
+    嚯嚯嚯嚯嚯嚯，
+    哈哈哈哈哈哈哈哈哈！
+end note
+
+RockMonster   -[#Black]> Rock2 : 使用黑雾龙卷
+
+CalabashBrother   -[#Blue]> Rock2 : 抓住
+CalabashBrother   -[#Blue]> RockMonster : 丢出岩石
+
+RockMonster   -[#Blue]> Rock2 : 吃下
+RockMonster   -[#Red]> RockMonster : 吃不下，受到伤害
+
+RockMonster   -[#Red]> RockMonster : 死亡
+
+@enduml

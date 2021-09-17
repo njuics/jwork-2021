@@ -1,0 +1,43 @@
+@startuml
+class Being
+
+class Creature
+{
+    String name
+    int health
+    int attack
+    int defense
+    String[] memory
+
+    speakTo()
+    yell()
+    listen()
+    attack()
+    jumpUp()
+    move()
+}
+
+
+class Monster{
+    int magic
+    rolleyes()
+    bePissed()
+    stretchOut()
+}
+
+class CalabashBrothers
+{
+    int identity
+    somersault()
+    useClairvoyance()
+    useClairaudience()
+}
+
+Creature --|> Being
+
+Monster --|> Creature
+
+CalabashBrothers --|> Creature
+
+Calabash --|> Creature
+@enduml

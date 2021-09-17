@@ -1,0 +1,53 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=3
+' 4:43 ~ 5:47
+@startuml
+
+actor 大娃 as dawa  #HotPink
+actor 蛇精 as snake #white
+entity 如意 as ruyi #Yellow
+entity 冰块 as iceberg #LightBlue
+actor 蝎子精 as scorpion  #Purple
+entity 长枪 as spear #Grey
+
+==对话==
+dawa  -> snake : 告诉
+note right
+    妖精！
+    还我爷爷！
+    还我爷爷！
+end note
+snake -[#Grey]> snake:转眼珠子
+snake  --> dawa : 告诉
+note right
+    可以可以，你这娃娃倒是一片孝心。
+    你爷爷就在这儿，你亲妈也在这儿，快给我磕头。
+end note
+
+dawa -[#Grey]> dawa :吐口水
+note right:呸！真不要脸！
+
+scorpion -[#Grey]> scorpion :笑
+note right:哈哈哈哈哈哈哈哈哈
+
+dawa -> scorpion : 告诉
+note right
+    今天要是不把我爷爷放了
+    我就把你们的妖洞砸个粉碎！
+end note
+
+scorpion -[#Grey]> scorpion :笑
+note right:哈哈哈哈哈哈哈哈哈
+
+==战斗==
+
+scorpion -[#Blue]> spear :投掷
+spear -[#OrangeRed]> dawa:攻击
+dawa --[#purple]> spear:掰弯,投掷
+spear -[#OrangeRed]> scorpion:攻击
+
+snake-[#Blue]>ruyi :施法
+ruyi-[#purple]>iceberg :召唤
+iceberg-[#OrangeRed]> dawa:攻击
+dawa --[#purple]> iceberg : 破坏
+
+@enduml

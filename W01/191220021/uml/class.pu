@@ -1,0 +1,74 @@
+@startuml classdiagram
+
+class Being
+{
+    # String m_name
+    + String Name()
+}
+
+class Creature
+{
+    - float m_health
+    - float m_maxHealth
+    # int m_emotionPoints
+    + Creature(name, maxHealth)
+    + Speak2(words, target)
+    + Grieve()
+    + Laugh()
+    + RollTheEyes()
+    + Move(target)
+    + Heal(healvalue)
+    # TakeDamage(damage, damageSource)
+    - boolean IsDead()
+}
+
+class Human
+{
+    + Human(name, maxHealth)
+    + Cry()
+}
+
+class Bogy
+{
+    - float baseDamage
+    + Bogy(name, maxHealth, baseDamage)
+    + Attack(atkTarget)
+    + Hug(hugTarget)
+    + Kiss(kissTarget)
+}
+
+class MagicWeapon
+{
+    + MagicWeapon(name)
+}
+
+class PurpleGrourd
+{
+    - Set<Being> beingsSet
+    + PurpleGrourd()
+    + PurpleGrourd(something)
+    + Glitter()
+    + SuckIn(something)
+    + Release(something)
+}
+
+class Scene
+{
+    - Human grandpa;
+    - Human seventhCalabasher;
+    - Bogy snakeWoman;
+    - Bogy scorpion;
+    - MagicWeapon purpleGourd;
+    + Scene()
+    + Play()
+    + main()
+}
+
+Creature --|> Being
+MagicWeapon --|> Being
+
+Human --|> Creature
+Bogy --|> Creature
+PurpleGrourd --|> MagicWeapon
+
+@enduml

@@ -1,0 +1,48 @@
+@startuml 191220159
+
+class Being {
+    String name
+}
+
+class Creature {
+    String[] memory
+    int memoryOffset
+    speakTo()
+    listen()
+    move()
+    pick()
+    drop()
+}
+
+class Item{
+    trap()
+    stab()
+    attract()
+    beUsed()
+    beKicked()
+}
+
+class Monster{
+    kick()
+    trick()
+    beStabbed()
+    beTrapped()
+    beAttracted()
+}
+
+class SixWa{
+    int status
+    use()
+    hide()
+    show()
+}
+
+Creature --|> Being
+
+SixWa --|> Creature
+
+Monster --|> Creature
+
+Item --|> Being
+
+@enduml

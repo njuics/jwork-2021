@@ -1,0 +1,55 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=16
+' 12:45 ~ 13:46
+
+@startuml
+actor       六娃   as sixWa
+actor       蛇精    as snake  #Black
+
+snake -[#Grey]> sixWa : 告诉
+note right
+    死到临头还嘴硬,
+    看我来收拾你
+end note
+
+sixWa -[#Grey]> snake : 告诉
+note left
+    好啊，
+    我在这等着你，
+    快来抓我吧
+end note
+
+snake -[#Grey]> snake : 念咒语
+note right
+    一二三四五
+    金木水火土
+end note
+
+snake -[#Red]> sixWa : 造成伤害
+note right: 草插到屁股上
+
+sixWa -[#Blue]> sixWa : 发怒
+note left: 哇呀呀呀呀呀...
+
+snake -[#Red]> sixWa : 掷出帽子
+note right: 帽子攻击
+
+sixWa -[#Red]> snake : 躲避攻击
+note left: 后滚翻
+
+sixWa -[#Red]> sixWa : 使用技能
+note left: 隐身术
+
+snake -[#Red]> sixWa : 造成攻击
+note right: 用帽子困住
+
+snake -[#Red]> sixWa : 嘲笑
+note right: 哈哈哈哈哈
+
+snake -[#Red]> sixWa : 得意
+note right
+    这顶帽子又厚又硬，
+    你就是把脑袋撞开了也休想出来
+end note
+
+@enduml
+

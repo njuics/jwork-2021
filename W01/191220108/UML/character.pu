@@ -1,0 +1,57 @@
+@startuml
+class Being
+
+class Creature {
+
+    int blood_volume
+    int weapon_num
+    int level
+    int LittleHarm
+    int BigHarm
+    boolean Defense
+    boolean death
+    string name
+    
+    BigAttack()
+    Attack()
+    LevelUp()
+    ReceiveInjury()
+    isdead()
+    FightWildAnimal()
+    Run()
+    Speak()
+
+}
+
+class StoneDoor{
+    open()
+    close()
+}
+
+class Monster{
+    Monster()
+}
+
+class Boss{
+  Boss()
+  Escape()
+}
+
+class GourdBaby{
+   GourdBaby()
+   NonBloodAttack()
+   NonFightAttack()
+   DefenseSkill()
+}
+
+Creature --|> Being
+
+
+GourdBaby --|> Creature
+
+Monster --|> Creature
+
+Boss --|> Creature
+
+StoneDoor --|> Being
+@enduml

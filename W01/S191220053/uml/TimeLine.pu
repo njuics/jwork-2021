@@ -1,0 +1,132 @@
+@startuml
+
+actor 4娃 as calaboy4
+actor 5娃 as calaboy5
+actor 7娃 as calaboy7
+actor 老头 as oldman
+actor 青蛙斥候 as frogscout
+actor 蛇精夫人 as snake
+actor 蝎子莱莱 as scorpion
+database 妖精洞穴 as stonecave
+entity 紫葫芦 as purplecalabash
+
+
+calaboy4 -[#Yellow]> stonecave : 给予闪电伤害
+
+hnote over frogscout
+    frogscout
+    become panic
+endnote
+
+frogscout -> snake : 报告
+note right
+    报!!!, 这帮蛮小子打进来了!!
+end note
+
+calaboy7 -> calaboy4: 组播
+note right
+    你们这帮野小子, 敢来这胡闹, 我可对你们不客气了!
+end note
+calaboy7 -> calaboy5: 组播
+note right
+    你们这帮野小子, 敢来这胡闹, 我可对你们不客气了!
+end note
+
+calaboy5 -> calaboy7: 说话
+note right
+    弟弟,你怎么昏了头脑, 去帮两个妖精?
+end note
+
+calaboy4 -> calaboy7: 说话
+note right
+    弟弟, 你中邪了, 怎么跟妖精混在一起?
+end note
+
+calaboy7 -> calaboy4: 说话
+note right
+    你们才是妖精呢, 我是妈妈的好宝贝. 谁敢欺负我的爸爸妈妈我就把它捏得粉碎
+end note
+calaboy7 -> calaboy5: 说话
+note right
+    你们才是妖精呢, 我是妈妈的好宝贝. 谁敢欺负我的爸爸妈妈我就把它捏得粉碎
+end note
+
+oldman -> calaboy7: 说话
+note right
+    孩子你中邪了, 快醒醒.
+end note
+
+calaboy7 -> oldman: 说话
+note right
+    你这老家伙, 再胡说八道我就要你好看!
+end note
+
+create control fire
+calaboy4 -[#Green]> fire ++: generate
+fire -[#Red]> calaboy7 : attack
+calaboy7 -[#Purple]> purplecalabash: use
+purplecalabash -[#Black]> fire : defuse
+destroy fire
+
+snake -> calaboy7: 说话
+note right
+    hahah, 你真行啊
+end note
+
+calaboy5 -> calaboy4 : 说话
+note right
+    哥哥, 看我的
+end note
+
+create control water
+loop 2次
+    calaboy5 -[#Green]> water ++: generate
+    calaboy7 -[#Purple]> purplecalabash : use
+    purplecalabash -[#Black]> water : defuse
+    destroy water
+end
+
+hnote over calaboy7
+    7th Bro Brags
+    about his weapon
+endnote
+
+create control lighting
+calaboy4 -[#Green]> lighting ++: generate
+calaboy7 -[#Purple]> purplecalabash: use
+purplecalabash -[#Black]> lighting : defuse
+destroy lighting
+
+calaboy7 -[#Purple]> purplecalabash : use
+purplecalabash -[#Red]> calaboy4 : mental assault
+activate calaboy4 #Grey
+hnote over calaboy4 : become mad
+
+purplecalabash -[#Red]> calaboy5 : mental assault
+activate calaboy5 #Grey
+hnote over calaboy5 : become mad
+
+calaboy5 -[#Grey]> calaboy4 : 说话
+note right
+    唉你这个混蛋!
+end note
+
+calaboy4 -[#Grey]> calaboy5 : 说话
+note right
+    我今天要给你点颜色瞧瞧
+end note
+
+calaboy5 -[#Red]> calaboy4 : attack
+calaboy4 -[#Green]> fire ++: generate
+calaboy5 -[#Green]> water ++: generate
+
+fire <-> water : counter
+destroy fire
+destroy water
+
+calaboy7 -> snake : 说话
+note right
+    哈哈哈, 妈, 你看他们都打起来了
+end note
+
+@enduml

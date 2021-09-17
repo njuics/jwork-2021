@@ -1,0 +1,53 @@
+@startuml
+
+class Creature {
+
+    int health
+    int attack
+    String name
+
+    speakTo()
+    heardSomethingFrom()
+    attackACreature()
+    receiveAttackFrom()
+    dead()
+
+}
+
+class HuLuWa {
+
+    useSkill()
+
+}
+
+class Monster {
+
+    sayMagicalWords()
+
+}
+
+class SixWa {
+
+    hideFromAttack()
+    useSkill()
+    beInsertedByGrass()
+    beTrapped()
+
+}
+
+class Snake {
+
+    laughAt()
+    throwSomethingTo()
+
+}
+
+HuLuWa --|> Creature
+
+Monster --|> Creature
+
+SixWa --|> HuLuWa
+
+Snake --|> Monster
+
+@enduml

@@ -1,0 +1,56 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=5
+' 7:44 ~ 3:46
+
+@startuml
+actor       穿山甲   as manis
+actor       飞鼠    as flyrat  #Black
+actor       蝎子精    as scorpion   #Purple
+entity      蟑螂精  as cockroach #White
+
+manis -[#Blue]> manis : 逃跑
+
+scorpion -[#Red]> manis : 造成伤害
+note left: 掐
+
+manis -[#Grey]> scorpion : 告诉
+note right
+    你们这些坏蛋..
+end note
+
+scorpion -[#Red]> manis : 造成伤害
+note left: 扔出
+
+flyrat -[#Red]> manis : 造成伤害
+note left: 叉住
+
+manis -[#Blue]> manis : 挣扎
+
+cockroach -[#Grey]> scorpion : 告诉
+note right
+    报告大王！大事不好！
+    老头与瞎眼葫芦逃跑啦！
+end note
+
+scorpion -[#Blue]> scorpion : 发怒
+note right: 这这这这....
+
+flyrat -[#Red]> manis : 造成伤害
+note left: 扔出
+
+scorpion -[#Red]> manis : 造成伤害
+note left: 掐住
+
+manis -[#Grey]> scorpion : 告诉
+note right
+    放开我！你们这些坏蛋！
+end note
+
+scorpion -[#Grey]> manis : 告诉
+note right
+    去你的！
+end note
+
+
+
+@enduml
+

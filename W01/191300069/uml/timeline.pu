@@ -1,0 +1,164 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=15
+' 3:55 ~ 4:55
+
+@startuml 时序图
+actor      三娃         as ge_three #Yellow
+actor      青蛇精       as greenSnake  #Cyan
+actor      鳄鱼头领     as crocodile   #Gold
+actor      独眼蛤蟆     as toad #Pink
+actor      蝙蝠精       as bat #Brown
+entity      宝剑  as sword #Purple
+entity      铰链  as chain #Blue
+entity      铁锤  as hammer #Black
+
+ge_three-[#Grey]> greenSnake : 告诉
+note right
+    可惜平头剑不会长个儿，留着它干啥，你还有什么法宝？快使出来吧！
+end note
+
+greenSnake -[#Grey]> ge_three : 告诉
+note right
+    铁娃匝，你急什么，看！
+end note
+
+sword -[#Green]> sword : 重生
+
+greenSnake -[#Grey]> ge_three : 告诉
+note right
+    蛤！我的宝剑就是会长个儿！这下看你能砍得断吗？
+end note
+
+box #LightBlue
+actor greenSnake
+entity sword
+end box
+par
+    greenSnake -[#Grey]> sword : 拿着
+    else
+    greenSnake -[#Grey]> ge_three :指着
+end
+
+loop 进行循环，循环5次
+    greenSnake -[#Grey]> ge_three : 告诉
+    note right
+        弄欧~
+    end note
+    ge_three -[#Grey]> sword : 砍断
+    sword -[#Green]> sword : 重生
+end
+greenSnake -[#Grey]> greenSnake :行动
+note right
+        大笑
+end note
+ge_three -[#Grey]> ge_three : 行动
+note right
+        气喘吁吁
+end note
+greenSnake -[#Grey]> ge_three :攻击
+ge_three -[#Grey]> ge_three : 行动
+note right
+        躲避攻击
+end note
+ge_three -[#Grey]> ge_three : 行动
+note right
+        逃跑
+end note
+
+par
+    toad -[#Grey]> chain : 行动
+    note right
+        拉紧
+    end note
+    else
+    bat -[#Grey]> chain :行动
+    note right
+        拉紧
+    end note
+end
+
+chain -[#Grey]> ge_three : 绊倒
+chain -[#Grey]> ge_three : 缠绕
+
+par
+    ge_three -[#Grey]> chain : 行动
+    note right
+        拉起
+    end note
+    else
+    ge_three -[#Grey]> toad :行动
+    note right
+        扔起
+    end note
+    ge_three -[#Grey]> bat :行动
+    note right
+        扔起
+    end note
+end
+
+toad -[#Grey]> toad : 行动
+note left
+        飞到空中
+end note
+
+bat -[#Grey]> bat : 行动
+note left
+        飞到空中
+end note
+ge_three -[#Grey]> chain : 粉碎
+
+toad -[#Grey]> toad : 行动
+note left
+        跌落在地，受到伤害
+end note
+
+bat -[#Grey]> bat : 行动
+note left
+        掉到树上，受到伤害
+end note
+
+ge_three -[#Grey]> ge_three : 行动
+note left
+        张嘴大笑，继续向前跑
+end note
+box #LightGreen
+actor crocodile
+entity hammer
+end box
+crocodile -[#Grey]> hammer : 行动
+note left
+        举起
+end note
+par
+    crocodile -[#Grey]> ge_three : 攻击
+    else
+    hammer -[#Grey]> ge_three : 攻击
+end
+note left
+        造成伤害
+end note
+ge_three -[#Grey]> ge_three : 自言自语
+note left
+        啊蛤..
+end note
+ge_three -[#Grey]> ge_three : 行动
+note left
+        跌倒在地
+end note
+crocodile -[#Grey]> crocodile : 自言自语
+note left
+        哼哼嗯？
+end note
+crocodile -[#Grey]> ge_three : 行动
+note left
+        前去查看状况
+end note
+crocodile -[#Grey]> ge_three : 观察
+note left
+        昏迷在地
+end note
+crocodile -[#Grey]> crocodile : 自言自语
+note left
+        啊哈哈哈哈哈哈哈哈哈哈哈~
+end note
+
+@enduml

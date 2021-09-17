@@ -2,12 +2,12 @@
 ' 2:50 ~ 3:46
 
 @startuml
-actor       老头   as oldman 
-actor       蛇精    as snake  #Black 
-actor       蝎子精    as scorpion   #Purple 
+actor       老头   as oldman
+actor       蛇精    as snake  #Black
+actor       蝎子精    as scorpion   #Purple
 entity      蛛网  as spiderweb #White
 
-spiderweb -[#Green]> spiderweb : 开 
+spiderweb -[#Green]> spiderweb : 开
 
 snake -[#Grey]> oldman : 告诉
 note right
@@ -21,9 +21,9 @@ note left: 哼!有这么请的么？
 
 snake -[#Grey]> oldman : 告诉
 note right
-老人家，冤仇易解不宜结，
-我们攀个亲家交个朋友，
-你可以安度晚年
+    老人家，冤仇易解不宜结，
+    我们攀个亲家交个朋友，
+    你可以安度晚年
 end note
 
 scorpion -[#Grey]> oldman : 告诉
@@ -62,7 +62,7 @@ end note
 
 scorpion -[#Blue]> scorpion : 转眼珠
 
-spiderweb -[#Green]> spiderweb : 关 
+spiderweb -[#Green]> spiderweb : 关
 
 @enduml
 

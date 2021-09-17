@@ -7,7 +7,7 @@
 2. 用此账号登陆github（若已登陆则跳过此步骤）；
 3. fork本仓库（ https://github.com/njuics/jwork-2021 ）至自己账户，仓库url为（ https://github.com/javalover/jwork-2021 );
 4. 在你的本机clone你所fork的仓库(`javalover/jwork-2021`）；
-5. 在`javalover/jwork-2021`进入当前作业目录，例如`jwork-2021/W01`目录，新建子目录`张三-151220001`,此处“张三”和“151220001” 分别替换真实姓名和学号;
+5. 在`javalover/jwork-2021`进入当前作业目录，例如`jwork-2021/W01`目录，新建子目录`S151220001`,此处“S151220001” 替换为自己真实学号;
 6. 在`javalover/jwork-2021`上创建“Pull request"，然后在QQ群内联系助教请其审核后合并。
 
 ## 作业提交要求

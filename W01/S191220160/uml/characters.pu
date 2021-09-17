@@ -1,0 +1,43 @@
+@startuml characters
+
+class Being{
+    String name
+    getName()
+    speak()
+    speakTo()
+    listen()
+}
+
+class Weapon{
+    int attack
+    String last_words
+    attackCreature()
+    beBroken()
+}
+class Creature{
+    int health
+    int attack
+    int defense
+    Weapon weapon
+    getWeapon()
+    laughOutLoud()
+    attack()
+    attackWithWeapon()
+    getAttack()
+    receiceDamage()
+    isDead()
+}
+class Monster{
+    rolleyes()
+}
+class Calabash{
+    spit()
+    breakWeapon()
+}
+Creature --|> Being
+Weapon --|> Being
+Monster --|> Creature
+Calabash--|> Creature
+Weapon --o Creature
+
+@enduml

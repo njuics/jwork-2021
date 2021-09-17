@@ -1,0 +1,79 @@
+@startuml
+
+class Being {
+    #String name
+}
+
+class Organism{
+    #String state
+    #String[] possession 
+
+    +talk()
+    +hear()
+    +laugh()
+    +move()
+    +grab()
+    +lose()
+    +handTo()
+    +takeDamage()
+}
+
+class CalabashBoy{
+    +drink()
+    +eyeGlow()
+    +getDrunk()
+    +drunkTalk()
+    +blackout()
+}
+
+class Butterfly{
+    +lieDown()
+}
+
+class Bat{
+    +push()
+    +fly()
+    +attack()
+    +stealGemStone()
+}
+
+class Snake{
+
+}
+
+class Thing{
+    getPushed()
+}
+
+class FlowerWine{
+    #bool isFull
+    +beEmpty()
+}
+
+class Lotus{
+    #FlowerWine[] wines
+    +FlowerWine grabFromLotus()
+}
+
+class Leaf{
+    #bool isOpen
+    +open()
+}
+
+class Gemstone{
+    +shine()
+}
+
+Being <|-- Thing
+Being <|-- Organism 
+Organism <|-- CalabashBoy
+Organism <|-- Butterfly
+Organism <|-- Bat
+Organism <|-- Snake
+Thing <|-- Gemstone
+Thing <|-- Leaf
+Thing <|-- FlowerWine
+Thing <|-- Lotus
+Lotus o-- FlowerWine
+
+@enduml

@@ -1,0 +1,48 @@
+
+@startuml
+
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+    String[] memory
+
+    speakTo()
+    listen()
+    attack()
+    move()
+}
+
+class Manis{
+    escape()
+    
+}
+
+class Flyrat{
+    throw()
+    spear()
+}
+
+class Scorpion
+{
+    throw()
+    choke() 
+}
+
+class Cockroach
+{
+
+}
+
+
+Manis --|> Creature
+
+Flyrat --|> Creature
+
+Scorpion --|> Creature
+
+Cockroach --|> Creature
+
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+
+class Being
+
+class Creature {
+
+    int health
+    int attack
+    int defense
+    String[] memory
+
+    speakTo()
+    listen()
+    attack()
+    move()
+    laugh()
+    ridicule()
+    bePissed() 
+}
+
+class ground{
+    status
+    open()
+    close()
+}
+
+class Monster{
+    int magic
+    doMagic()
+    bleed()
+}
+
+class Gourdman{
+    int magic
+    beTied()
+    beDropped()
+}
+
+
+Creature --|> Being
+
+
+Gourdman --|> Creature
+
+Monster --|> Creature
+
+ground --|> Being
+
+@enduml

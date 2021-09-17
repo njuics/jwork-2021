@@ -1,0 +1,61 @@
+'https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=6 
+'7:55-9:20
+
+@startuml
+actor       葫芦娃   as gourd #Yellow
+entity      宝剑  as sword #White
+actor       蛇精    as snake  #Black 
+actor       蝎子精    as scorpion   #Purple 
+
+snake -[#Grey]> gourd : 告诉
+note right
+    你难道不怕我的宝剑？
+end note
+
+gourd -[#Grey]> snake : 嘲讽
+note left: 哈哈,把你所有武器拿出来吧
+
+snake -[#Grey]> gourd : 告诉
+note right
+好！
+你如果敢接我三剑，我就缴械投降，放了你的哥哥
+end note
+
+gourd -[#Grey]> snake : 告诉
+note left: 好
+
+sword -[#Red]> gourd : 攻击
+gourd -[#Green]> sword : 抵挡了攻击
+sword -[#Red]> gourd : 攻击
+gourd -[#Green]> sword : 抵挡了攻击
+
+gourd -[#Blue]> snake : 嘲讽
+note left: 哈哈,就这,你只有最后一次机会了
+
+scorpion -[#Blue]> scorpion : 害怕
+note right: 啊，这么厉害的葫芦
+
+
+snake -[#Gray]> gourd :告诉
+note right: 哼，那你是不知道阴阳刚柔剑的厉害！
+
+snake -[#Grey]> sword : 告诉
+note right: 变！
+
+sword -[#Grey]>  sword : 升级！
+
+snake -[#Grey]> gourd : 告诉
+note right: 接招！
+
+sword -[#Red]> gourd : 攻击
+gourd -[#Green]> sword : 抵挡了攻击
+sword -[#Blue]> gourd : 控制
+gourd -[#Blue]> gourd : 被控制了！
+
+snake -[#Blue]> gourd :嘲讽
+note right: 哈哈哈，你的钢筋铁骨也知道我的阴阳刚柔剑的厉害！
+
+scorpion -[#Blue]> gourd : 嘲讽
+note right: 哈哈哈
+@enduml
+

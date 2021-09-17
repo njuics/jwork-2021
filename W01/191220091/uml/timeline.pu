@@ -1,0 +1,89 @@
+'  https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=4 
+'  2:23 ~ 3:20
+
+@startuml
+
+actor       蛤蟆统领  as frog   #Purple
+actor       蝎子精    as scorpion   #Blue
+actor       蛇精    as snake  #Black
+actor       二娃    as secondBoy    #Orange
+entity      葫芦们  as otherGuard
+
+snake -[#Grey]> scorpion : 告诉
+note right
+    这第二个葫芦娃
+    莫非就是顺风耳、千里眼？
+end note
+
+snake -[#Green]> snake : 转眼睛
+
+snake -[#Grey]> scorpion : 告诉
+note right
+    这二娃子本领奇特
+    必定上门来找我们麻烦！
+end note
+
+scorpion -[#Grey]> frog : 呼喊
+note right: 蛤蟆统领！
+
+frog -[#Grey]> scorpion : 回应
+note left: 在！
+
+scorpion -[#Grey]> frog : 命令
+note right
+    洞里洞外给我严加防守
+    把那老头儿和葫芦娃...
+end note
+
+snake -[#Grey]> scorpion : 告诉
+note right: 哎！嘘...轻点儿！
+
+scorpion -[#Blue]> frog : 伸手
+
+frog -[#Blue]> scorpion : 跳上
+
+scorpion -[#Grey]> frog : 命令
+note right: 把他们关到十八层地洞里去！
+
+frog -[#Grey]> scorpion : 回应
+note left: 是！
+
+secondBoy -[#Grey]-> frog  : 接收信息
+note right: 千里眼顺风耳
+
+secondBoy -[#Green]> secondBoy : 翻跟斗
+
+secondBoy -[#Grey]> otherGuard : 告诉
+note left
+    兄弟们，不好啦！
+    大哥中了魔，被妖怪抓到了！
+    现在，妖怪把爷爷和大哥
+    都关到十八层地洞中去了！
+end note
+
+otherGuard -[#Grey]> secondBoy : 告诉
+note left
+    大哥本领高强、力大无穷
+    怎么会被妖怪抓住呢！
+end note
+
+otherGuard -[#Grey]> secondBoy : 告诉
+note left
+    你再看看清楚！
+end note
+
+secondBoy -[#Grey]> otherGuard : 告诉
+note left
+    我这千里眼还会看错？
+    妖怪有一个如意和一块魔镜
+    我得前去砸了他们的宝贝
+    才能救出爷爷和大哥！
+end note
+
+otherGuard -[#Grey]> secondBoy : 告诉
+note left
+    二哥二哥，路上小心！
+    二哥二哥，多加小心！
+end note
+
+@enduml

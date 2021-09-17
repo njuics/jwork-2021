@@ -1,0 +1,50 @@
+@startuml
+
+class Object
+
+class Creature {
+    String name
+    int hp
+    int speed
+    int defense
+
+    speakTo()
+    listenFrom()
+    move()
+    beAttacked()
+    isDead()
+}
+
+class CalabashBrother {
+    defenseStronger()
+}
+
+class Snake {
+    useWeapon()
+}
+
+class Weapon {
+    String name
+    int type
+    int hurt
+
+    attack()
+}
+
+class Sword {
+    int speedReduce
+
+    changeSwordType()
+}
+
+Creature --|> Object
+
+Weapon --|> Object
+
+CalabashBrother --|> Creature
+
+Snake --|> Creature
+
+Sword --|> Weapon
+
+@enduml
