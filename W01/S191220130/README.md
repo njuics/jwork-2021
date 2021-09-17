@@ -10,7 +10,7 @@ http://www.plantuml.com/plantuml/png/dPB1RjCm6CVlVWfBE_C2FQ1f5ww82qA8GxKPLk6jA3X
 
 
 运行结果：
-···
+```
 The Rock:蛇精 get on me!
 The Rock:大王 get on me!
 The Rock:Rise!
@@ -32,4 +32,4 @@ The Rock:Rise!
 蛇精:I use RuYi to attack 葫芦娃!
 葫芦娃:I lose 5 HP!
 葫芦娃:I am frozen!
-···
+```
